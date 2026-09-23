@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none" class="brand-logo-svg">
+  <g transform="translate(10, 10)">
+    <path d="M20 2 C20 2, 6 22, 6 30 C6 38 12 40 20 40 C28 40 34 38 34 30 C34 22, 20 2, 20 2 Z" stroke="#111827" stroke-width="3" fill="none"/>
+    <path d="M12 28 C16 26, 24 32, 28 28" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="64" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" letter-spacing="2" fill="#111827">AQUALABO</text>
+  <text x="65" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700" letter-spacing="2.5" fill="#4b5563">WATER ANALYSIS INSTRUMENTS</text>
+</svg>

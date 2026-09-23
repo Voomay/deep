@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" id="metaDescription" content="Read technical articles, case studies, and water engineering guides from Deep Blue Aqua's team of specialists.">
+  <title id="pageTitle">Technical Article | Deep Blue Aqua - Complete Water Solutions</title>
+  <link rel="icon" href="favicon.svg">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="blog-post-page">
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="brand" aria-label="Deep Blue Aqua home">
+      <img src="assets/logo.png" alt="Deep Blue Aqua" class="brand-logo">
+    </a>
+    <div class="mobile-header-actions">
+      <a href="tel:+27218562031" class="header-call-btn" aria-label="Call +27 21 856 2031" title="Call +27 21 856 2031">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+      <button class="menu" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <nav>
+      <div class="nav-header-row">
+        <img src="assets/logo.png" alt="Deep Blue Aqua" class="nav-header-logo">
+        <button type="button" class="nav-close-btn" aria-label="Close navigation">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <a href="index.html"><span>Home</span></a>
+      <a href="about.html"><span>About Us</span></a>
+      <div class="nav-has-dropdown">
+        <div class="nav-item-wrap">
+          <a class="nav-link-main" href="services.html"><span>Solutions</span> <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+          <button type="button" class="mobile-dropdown-toggle" aria-label="Toggle Solutions submenu">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="services-dropdown" id="servicesDropdown">
+          <div class="dropdown-arrow-tip"></div>
+          <ul class="dropdown-list">
+            <li>
+              <a href="services.html#service-aquaculture" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-fish-fins"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Aquaculture Systems</strong>
+                  <span class="dropdown-desc">Turnkey hatcheries, grow-out facilities &amp; R&amp;D</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="services.html#service-ras" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-arrows-spin"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Recirculating Systems (RAS)</strong>
+                  <span class="dropdown-desc">Drum filters, biofiltration, protein skimmers &amp; O₂</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="services.html#service-live-holding" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-box-archive"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Live Holding Systems</strong>
+                  <span class="dropdown-desc">Lobster, abalone &amp; shellfish purging infrastructure</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="services.html#service-aquarium" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-water"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Commercial Aquarium Systems</strong>
+                  <span class="dropdown-desc">Public exhibits, research facilities &amp; live seafood displays</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="services.html#service-monitoring" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-chart-line"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Monitoring &amp; Control</strong>
+                  <span class="dropdown-desc">Dissolved oxygen, sensors, data logging &amp; alarms</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="services.html#service-pools" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-person-swimming"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Specialist Swimming Pools</strong>
+                  <span class="dropdown-desc">Commercial 50m pools, school pools &amp; natural eco-pools</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="services.html#service-consulting" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-compass-drafting"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Design, Consulting &amp; Supply</strong>
+                  <span class="dropdown-desc">CAD modelling, feasibility &amp; specialist equipment</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="dropdown-footer">
+            <a href="services.html">
+              <span>View All Solutions</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html#why-choose-us"><span>Why Choose Us</span></a>
+      <a href="index.html#projects"><span>Projects</span></a>
+      <a class="active" href="blog.html"><span>Insights</span></a>
+      <a href="contact.html"><span>Contact</span></a>
+      <div class="nav-drawer-actions">
+        <a class="button glow" href="contact.html" data-quote-trigger>Discuss Your Project <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="nav-contact-pill" href="tel:+27218562031"><i class="fa-solid fa-phone"></i> +27 21 856 2031</a>
+        <a class="nav-contact-pill" href="https://wa.me/27218562031" target="_blank" rel="noopener" style="color:#0f8b44;background:#e8f9ef;border-color:#b9eaca;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Technical Desk</a>
+      </div>
+    </nav>
+    <a class="phone" href="tel:+27218562031">
+      <i class="fa-solid fa-phone"></i>&nbsp; +27 21 856 2031
+    </a>
+    <a class="button dark" href="contact.html" data-quote-trigger>
+      Discuss Your Project <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </header>
+
+  <main>
+    <section class="page-hero blog-cover">
+      <div class="page-hero-inner">
+        <div class="breadcrumb" style="justify-content: center; margin-bottom: 12px;">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <span class="sep">/</span>
+          <a href="blog.html">Insights</a>
+          <span class="sep">/</span>
+          <span class="current" id="heroCategoryText">Technical Article</span>
+        </div>
+        <div class="eyebrow" style="color:#00c5ef;">KNOWLEDGE FROM BELOW THE SURFACE</div>
+        <h2 style="color:#ffffff; font-size:clamp(22px, 3.5vw, 34px); margin: 0 0 10px; font-weight:800;" id="heroArticleTitle">Technical Publication</h2>
+      </div>
+      <div class="page-hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path class="wave-front" d="M0,60 C260,15 540,95 820,40 C1100,5 1280,75 1440,45 L1440,120 L0,120 Z" fill="#f7fbfe"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Main Content Layout with Left Sidebar -->
+    <div class="wrap">
+      <div class="blog-article-layout">
+        
+        <!-- LEFT SIDEBAR -->
+        <aside class="blog-sidebar">
+          
+          <!-- Relevant Blogs in Same Category Widget -->
+          <div class="sidebar-card sidebar-relevant-blogs" id="relevantBlogsWidget">
+            <div class="sidebar-card-header">
+              <h3><i class="fa-solid fa-layer-group" style="color:#00bce9;"></i> <span id="relevantHeading">Relevant Articles</span></h3>
+              <p id="relevantSubheading">Related technical insights in this engineering domain</p>
+            </div>
+            <div class="relevant-blogs-list" id="relevantBlogsList">
+              <!-- Dynamically populated -->
+            </div>
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #e5f1f9; text-align:center;">
+              <a href="blog.html" style="font-size:12.5px; font-weight:700; color:#009bd0; display:inline-flex; align-items:center; gap:6px;">
+                <span>Browse All Articles</span> <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Us Form Widget -->
+          <div class="sidebar-card sidebar-contact-card">
+            <div class="sidebar-card-header">
+              <h3><i class="fa-solid fa-envelope-open-text" style="color:#00bce9;"></i> Consult an Aquatic Engineer</h3>
+              <p>Have questions about your RAS design, water quality sensors, or live holding facility? Talk directly to our technical desk.</p>
+            </div>
+            <form id="sidebarContactForm" class="sidebar-form">
+              <div class="sidebar-form-group">
+                <label for="sidebarName">Your Name &amp; Company *</label>
+                <input type="text" id="sidebarName" required placeholder="e.g. Johan Steyn, Marine Aqua Ltd">
+              </div>
+              <div class="sidebar-form-group">
+                <label for="sidebarPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="sidebarPhone" required placeholder="e.g. +27 82 123 4567">
+              </div>
+              <div class="sidebar-form-group">
+                <label for="sidebarEmail">Email Address *</label>
+                <input type="email" id="sidebarEmail" required placeholder="name@aquafarm.co.za">
+              </div>
+              <div class="sidebar-form-group">
+                <label for="sidebarService">Specialist Solution Needed</label>
+                <select id="sidebarService">
+                  <option value="Aquaculture Systems">Aquaculture Systems &amp; Hatcheries</option>
+                  <option value="Recirculating Aquaculture Systems (RAS)">Recirculating Aquaculture Systems (RAS)</option>
+                  <option value="Live Holding Systems">Live Holding (Lobster, Abalone)</option>
+                  <option value="Water Quality Monitoring">Water Quality Monitoring &amp; Control</option>
+                  <option value="Specialist Swimming Pools">Specialist Swimming Pools</option>
+                  <option value="Design & Consulting">Design, Modelling &amp; Consulting</option>
+                </select>
+              </div>
+              <div class="sidebar-form-group">
+                <label for="sidebarMsg">Project Requirements</label>
+                <textarea id="sidebarMsg" rows="3" placeholder="Briefly describe your target species, flow rates, biomass, or project location..."></textarea>
+              </div>
+              <button type="submit" class="button glow sidebar-submit-btn">
+                <span>Send Enquiry</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <div id="sidebarFormSuccess" class="sidebar-form-success" style="display:none;">
+                <i class="fa-solid fa-circle-check"></i> Thank you! An engineer will review your inquiry and respond promptly.
+              </div>
+            </form>
+          </div>
+
+          <!-- Quick Call To Action Box -->
+          <div class="sidebar-card sidebar-cta-card">
+            <span class="sidebar-cta-badge"><i class="fa-solid fa-bolt"></i> STRAND OFFICE</span>
+            <h4>Need Specialist Aquatic Advice?</h4>
+            <p>Direct lines to our Strand, Western Cape technical desk for aquaculture projects and system design.</p>
+            <div class="sidebar-cta-actions">
+              <a href="tel:+27218562031" class="sidebar-action-btn sidebar-phone-btn">
+                <i class="fa-solid fa-phone"></i> <span>+27 21 856 2031</span>
+              </a>
+              <a href="https://wa.me/27218562031" target="_blank" rel="noopener" class="sidebar-action-btn sidebar-wa-btn">
+                <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp Us</span>
+              </a>
+              <button type="button" class="button glow sidebar-quote-trigger" data-quote-trigger>
+                <i class="fa-solid fa-file-invoice"></i> Discuss Your Project
+              </button>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- RIGHT MAIN ARTICLE CONTENT -->
+        <article class="blog-main-content">
+          
+          <!-- Article Top Meta -->
+          <div class="article-post-header">
+            <div class="article-meta-tags">
+              <span class="article-category-pill" id="articleCategoryPill">Filtration</span>
+              <span class="article-meta-item"><i class="fa-regular fa-calendar"></i> <span id="articleDate">14 Sep 2026</span></span>
+              <span class="article-meta-item"><i class="fa-regular fa-clock"></i> <span id="articleReadTime">6 min read</span></span>
+              <span class="article-meta-item article-author"><i class="fa-solid fa-user-shield"></i> Deep Blue Aqua Engineering Desk</span>
+            </div>
+            <h1 class="article-post-title" id="articleTitle">The Critical Role of Multi-Stage Filtration in Mitigating High-Salinity Borehole Water</h1>
+          </div>
+
+          <!-- TOP SOCIAL MEDIA SHARING BAR -->
+          <div class="social-share-bar" id="socialShareTop">
+            <span class="share-label"><i class="fa-solid fa-share-nodes"></i> Share this article:</span>
+            <div class="share-buttons">
+              <a href="#" class="share-btn share-whatsapp" id="shareWaTop" target="_blank" rel="noopener" title="Share on WhatsApp" aria-label="Share on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+              </a>
+              <a href="#" class="share-btn share-linkedin" id="shareLiTop" target="_blank" rel="noopener" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span>
+              </a>
+              <a href="#" class="share-btn share-facebook" id="shareFbTop" target="_blank" rel="noopener" title="Share on Facebook" aria-label="Share on Facebook">
+                <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+              </a>
+              <a href="#" class="share-btn share-twitter" id="shareTwTop" target="_blank" rel="noopener" title="Share on X" aria-label="Share on X">
+                <i class="fa-brands fa-x-twitter"></i> <span>X</span>
+              </a>
+              <button type="button" class="share-btn share-copy" id="shareCopyTop" title="Copy link to clipboard" aria-label="Copy link to clipboard">
+                <i class="fa-solid fa-link"></i> <span>Copy Link</span>
+              </button>
+              <a href="#" class="share-btn share-email" id="shareEmailTop" title="Share via Email" aria-label="Share via Email">
+                <i class="fa-solid fa-envelope"></i> <span>Email</span>
+              </a>
+            </div>
+            <div class="copy-toast" id="copyToastTop" style="display:none;"><i class="fa-solid fa-check"></i> Link copied to clipboard!</div>
+          </div>
+
+          <!-- Featured Article Hero Image -->
+          <div class="article-hero-media">
+            <img src="assets/projects/06_Trout_Hatchery_RAS.png" alt="Article Hero Image" id="articleHeroImg" class="article-post-hero-img">
+          </div>
+
+          <!-- Article Prose Body -->
+          <div class="article-body-prose" id="articleContent">
+            <!-- Populated via script -->
+          </div>
+
+          <!-- Mid Article CTA -->
+          <div class="article-mid-cta">
+            <div class="article-mid-cta-text">
+              <h3>Discuss Your Aquatic Engineering Project</h3>
+              <p>Our specialists design and commission custom Recirculating Aquaculture Systems (RAS), live holding infrastructure, and monitoring arrays across Southern Africa and internationally.</p>
+            </div>
+            <button type="button" class="button glow" data-quote-trigger>
+              Discuss Your Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- BOTTOM SOCIAL MEDIA SHARING BAR -->
+          <div class="social-share-bar bottom-share" id="socialShareBottom">
+            <span class="share-label"><i class="fa-solid fa-share-nodes"></i> Found this useful? Share with colleagues:</span>
+            <div class="share-buttons">
+              <a href="#" class="share-btn share-whatsapp" id="shareWaBottom" target="_blank" rel="noopener" title="Share on WhatsApp" aria-label="Share on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+              </a>
+              <a href="#" class="share-btn share-linkedin" id="shareLiBottom" target="_blank" rel="noopener" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span>
+              </a>
+              <a href="#" class="share-btn share-facebook" id="shareFbBottom" target="_blank" rel="noopener" title="Share on Facebook" aria-label="Share on Facebook">
+                <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+              </a>
+              <a href="#" class="share-btn share-twitter" id="shareTwBottom" target="_blank" rel="noopener" title="Share on X" aria-label="Share on X">
+                <i class="fa-brands fa-x-twitter"></i> <span>X</span>
+              </a>
+              <button type="button" class="share-btn share-copy" id="shareCopyBottom" title="Copy link to clipboard" aria-label="Copy link to clipboard">
+                <i class="fa-solid fa-link"></i> <span>Copy Link</span>
+              </button>
+              <a href="#" class="share-btn share-email" id="shareEmailBottom" title="Share via Email" aria-label="Share via Email">
+                <i class="fa-solid fa-envelope"></i> <span>Email</span>
+              </a>
+            </div>
+            <div class="copy-toast" id="copyToastBottom" style="display:none;"><i class="fa-solid fa-check"></i> Link copied to clipboard!</div>
+          </div>
+
+          <!-- Prev / Next Article Navigation -->
+          <nav class="article-prev-next-nav" id="articleNav">
+            <a href="blog.html" class="nav-article-card" id="prevArticleLink">
+              <span class="nav-article-direction"><i class="fa-solid fa-arrow-left"></i> Previous Article</span>
+              <span class="nav-article-title" id="prevArticleTitle">Back to all articles</span>
+            </a>
+            <a href="blog.html" class="nav-article-card" id="nextArticleLink" style="text-align:right;">
+              <span class="nav-article-direction" style="justify-content:flex-end;">Next Article <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="nav-article-title" id="nextArticleTitle">Back to all articles</span>
+            </a>
+          </nav>
+
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="footer-top wrap">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <a class="footer-brand" href="index.html" aria-label="Deep Blue Aqua">
+            <img src="assets/logo-white.png" alt="Deep Blue Aqua" class="footer-logo">
+          </a>
+          <p class="footer-desc">
+            South African aquatic engineering and water technology company specialising in the design, manufacture, supply and installation of systems where water quality, reliability and control matter.
+          </p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/27218562031" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#service-aquaculture"><i class="fa-solid fa-angle-right"></i> Aquaculture Systems</a></li>
+            <li><a href="services.html#service-ras"><i class="fa-solid fa-angle-right"></i> Recirculating Systems (RAS)</a></li>
+            <li><a href="services.html#service-live-holding"><i class="fa-solid fa-angle-right"></i> Live Holding Systems</a></li>
+            <li><a href="services.html#service-aquarium"><i class="fa-solid fa-angle-right"></i> Commercial Aquarium Systems</a></li>
+            <li><a href="services.html#service-monitoring"><i class="fa-solid fa-angle-right"></i> Monitoring &amp; Control Systems</a></li>
+            <li><a href="services.html#service-pools"><i class="fa-solid fa-angle-right"></i> Specialist Swimming Pools</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Our Company</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Specialist Solutions</a></li>
+            <li><a href="index.html#why-choose-us"><i class="fa-solid fa-angle-right"></i> Why Choose Us</a></li>
+            <li><a href="index.html#projects"><i class="fa-solid fa-angle-right"></i> Featured Projects</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Insights &amp; Articles</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Discuss Your Project</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Get in Touch</h4>
+          <div class="footer-contact-list">
+            <a href="tel:+27218562031" class="footer-contact-item">
+              <span class="fci-icon"><i class="fa-solid fa-phone"></i></span>
+              <div class="fci-text">
+                <span class="fci-label">Call Our Office</span>
+                <strong>+27 21 856 2031</strong>
+              </div>
+            </a>
+            <a href="mailto:info@deepblueaqua.net" class="footer-contact-item">
+              <span class="fci-icon"><i class="fa-solid fa-envelope"></i></span>
+              <div class="fci-text">
+                <span class="fci-label">Email Enquiries</span>
+                <strong>info@deepblueaqua.net</strong>
+              </div>
+            </a>
+            <div class="footer-contact-item">
+              <span class="fci-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div class="fci-text">
+                <span class="fci-label">Office &amp; Workshop</span>
+                <span>185 Mills Street, Gants Plaza, Strand 7140, Western Cape</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="fci-icon"><i class="fa-solid fa-clock"></i></span>
+              <div class="fci-text">
+                <span class="fci-label">Business Hours</span>
+                <span>Mon – Fri: 08:00 – 17:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner wrap">
+        <div class="copyright-info">
+          <span>© 2026 Deep Blue Aquatic Systems (Pty) Ltd. All rights reserved.</span>
+          <span class="sep">|</span>
+          <span class="tag">Specialist Aquatic Systems</span>
+        </div>
+        <div class="footer-legal">
+          <a href="contact.html">Privacy Policy</a>
+          <span class="dot">•</span>
+          <a href="contact.html">Terms & Conditions</a>
+          <span class="dot">•</span>
+          <a href="contact.html">Quality &amp; Environmental Policy</a>
+        </div>
+        <a href="#" class="back-to-top" aria-label="Back to top">
+          <span>Top</span> <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <aside class="mobile-bottom-bar" aria-label="Quick contact actions">
+    <a href="tel:+27218562031" class="mbb-btn mbb-call">
+      <i class="fa-solid fa-phone"></i> <span>Call</span>
+    </a>
+    <a href="https://wa.me/27218562031" target="_blank" rel="noopener" class="mbb-btn mbb-wa">
+      <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+    </a>
+    <button type="button" class="mbb-btn mbb-quote" data-quote-trigger>
+      <i class="fa-solid fa-file-invoice"></i> <span>Get a Quote</span>
+    </button>
+  </aside>
+
+  <!-- Script for Database & Page Interactivity -->
+  <script>
+    // Complete Articles Database
+    const articlesDatabase = {
+      featured: {
+        id: "featured",
+        title: "What Is a Recirculating Aquaculture System (RAS)?",
+        category: "ras",
+        categoryName: "Aquaculture & RAS",
+        date: "18 Sep 2026",
+        readTime: "6 min read",
+        img: "assets/projects/06_Trout_Hatchery_RAS.png",
+        content: `
+          <p>Recirculating Aquaculture Systems (RAS) represent a transformative leap forward in modern fish and shellfish production. Unlike conventional flow-through facilities that continuously draw in and discharge vast volumes of untreated water, RAS treats and recycles up to 99% of total system volume within a closed or semi-closed culture loop.</p>
+          
+          <h2>Greater Control Over the Culture Environment</h2>
+          <p>At the core of Deep Blue Aqua's RAS engineering philosophy is absolute environmental stability. Aquatic organisms divert energy toward somatic growth rather than physiological stress when water temperature, dissolved oxygen, and metabolic waste parameters remain strictly regulated.</p>
+          
+          <h2>The Multi-Barrier RAS Treatment Train</h2>
+          <p>Every commercial RAS designed by Deep Blue Aqua incorporates a synchronized succession of physical, biological, and chemical treatment stages:</p>
+          <p><strong>1. Mechanical Drum Filtration:</strong> Micro-screen rotary drum filters intercept solid fecal matter and uneaten feed pellets down to 40–60 microns before organic breakdown can occur.</p>
+          <p><strong>2. Moving-Bed Biofiltration (MBBR):</strong> Aerobic nitrifying bacteria colonizing buoyant bio-media convert toxic total ammonia nitrogen (TAN) first into nitrite (NO₂⁻), then into less harmful nitrate (NO₃⁻).</p>
+          <p><strong>3. Foam Fractionation (Protein Skimming):</strong> Fine bubbles strip dissolved organic carbon (DOC), microscopic proteins, and fine colloids from the water column, preventing biological oxygen demand (BOD) spikes.</p>
+          <p><strong>4. Oxygen Injection & Gas Management:</strong> Pure gaseous oxygen is dissolved into the culture stream via high-efficiency oxygen cones, maintaining DO levels above 90% saturation regardless of stocking density.</p>
+          <p><strong>5. Thermal Control & Disinfection:</strong> High-capacity heat pump heat exchangers maintain precise thermal profiles, while inline ultraviolet (UV) or ozone oxidation eliminates opportunistic bacterial pathogens.</p>
+        `,
+        takeaways: [
+          "RAS reduces freshwater and marine volume consumption by more than 95% compared to flow-through aquaculture.",
+          "Mechanical solids removal within 15 minutes of excretion reduces biological biofilter loading by over 40%.",
+          "Automated dissolved oxygen and temperature regulation maximizes feed conversion ratios (FCR).",
+          "Closed RAS infrastructure provides unmatched biosecurity against oceanic pathogens, red tides, and agricultural runoff."
+        ]
+      },
+      "0": {
+        id: "0",
+        title: "How Drum Filters Work in Aquaculture",
+        category: "ras",
+        categoryName: "Aquaculture & RAS",
+        date: "14 Sep 2026",
+        readTime: "5 min read",
+        img: "assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.jpg",
+        content: `
+          <p>In any recirculating or live-holding facility, mechanical solids removal is the critical first line of defense. If particulate fish wastes and uneaten feed remain suspended in the water column, turbulence and pumping rapidly break them down into microscopic colloidal particles and dissolved ammonia.</p>
+          
+          <h2>Operating Principle of the Rotary Drum Screen</h2>
+          <p>Raw water enters the inside of a slowly rotating perforated cylinder lined with precision polyester or 316 stainless steel filter cloth. Water flows outward under gravity through the screen mesh, while suspended particles larger than the screen rating (typically 40 to 60 microns) are trapped on the inner mesh surface.</p>
+          
+          <h2>Automated Self-Cleaning Backwash Cycles</h2>
+          <p>As solids accumulate on the inner screen face, the water level differential between the drum interior and exterior tank increases. High-precision level transducers detect this head-loss threshold, instantly initiating the drum drive motor and activating high-pressure spray nozzles mounted above the drum. A pressurized fan spray dislodges trapped cakes into an internal stainless collection trough for discharge.</p>
+          
+          <h2>Why Rapid Solids Removal Protects Biofilters</h2>
+          <p>By capturing feces before physical degradation and bacterial mineralization occur, drum filters prevent organic carbon from overwhelming the autotrophic nitrifying bacteria in the downstream moving-bed biofilters (MBBR), preserving nitrification capacity and keeping water clarity sparkling.</p>
+        `,
+        takeaways: [
+          "Interception of intact fecal pellets prevents rapid dissolution into toxic ammonia and fine organic colloids.",
+          "Differential pressure backwashing operates automatically on demand, using under 1.5% of total circulation flow.",
+          "Stainless steel 316L and engineering polymer construction ensure zero corrosion across freshwater and hyper-saline marine duties."
+        ]
+      },
+      "1": {
+        id: "1",
+        title: "Why Water Quality Monitoring Matters in Aquaculture",
+        category: "monitoring",
+        categoryName: "Water Quality Monitoring",
+        date: "08 Sep 2026",
+        readTime: "5 min read",
+        img: "assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.jpg",
+        content: `
+          <p>Reliable water management starts with reliable information. In high-density aquaculture, hatcheries, and live seafood holding systems, minutes make the difference between biological safety and catastrophic stock loss.</p>
+          
+          <h2>The Critical Role of Dissolved Oxygen (DO)</h2>
+          <p>Fish and shellfish consume oxygen continuously while excreting carbon dioxide and ammonia. A power outage, aerator trip, or rapid temperature rise can deplete tank oxygen reserves within 20 to 45 minutes under heavy stocking loads. Continuous optical DO probes provide instant detection of downward trends long before animals show visible signs of asphyxiation.</p>
+          
+          <h2>Optical vs Galvanic Sensors</h2>
+          <p>Deep Blue Aqua deploys advanced optical luminescence DO sensors from international partners including OxyGuard and Campbell Scientific. Unlike older galvanic membranes that consume electrolyte and foul rapidly in biological bio-films, optical sensors require zero membrane replacements and maintain stable calibration over months.</p>
+          
+          <h2>Automated Telemetry & Fail-Safe Controls</h2>
+          <p>When dissolved oxygen drops below pre-set thresholds, our automated PLC control systems instantly trigger emergency backup oxygen solenoids, switch on auxiliary blowers, and dispatch audible alarms and SMS alerts directly to facility managers.</p>
+        `,
+        takeaways: [
+          "Continuous optical DO monitoring provides real-time warnings before biological stress impacts stock.",
+          "Integrated PLC switchgear enables automated fail-safe actuation of emergency pure oxygen injection.",
+          "Permanent multi-parameter logging provides verified water-quality compliance records for HACCP and export audits."
+        ]
+      },
+      "2": {
+        id: "2",
+        title: "How to Reduce Risk in Live Lobster and Abalone Holding",
+        category: "holding",
+        categoryName: "Live Holding Systems",
+        date: "01 Sep 2026",
+        readTime: "6 min read",
+        img: "assets/services/02_Live_Holding/0005_West-Coast-rock-lobster.jpg",
+        content: `
+          <p>Live seafood export is a high-value, high-risk sector. Between ocean capture, landing, packing, and international airfreight, valuable species such as West Coast rock lobster (Jasus lalandii) and South African abalone (Haliotis midae) must be kept in prime physiological condition.</p>
+          
+          <h2>Thermal Chilling & Metabolic Suppression</h2>
+          <p>Cold-water species produce excessive ammonia and nitrogenous waste when subjected to ambient packing temperatures. Deep Blue Aqua live-holding systems incorporate high-efficiency titanium heat exchangers that chill holding water to 10°C–12°C. Lowering water temperature suppresses animal metabolic rates, reducing oxygen demand and waste excretion by more than 50%.</p>
+          
+          <h2>Protein Fractionation for Mucus and Foam Removal</h2>
+          <p>Stressed lobsters and abalone produce thick defensive mucus and proteinaceous foam. In closed holding tanks, this foam rapidly smothers animal gills and coats surfaces. Industrial-scale foam fractionators (protein skimmers) continuously strip these organic molecules, keeping the water crystal clear and free of surface scum.</p>
+          
+          <h2>Purging Cycles Before International Air Transport</h2>
+          <p>Holding animals in clean, recirculated, chilled water for 48 to 72 hours purges their digestive tracts and hardens their shells, drastically reducing transport mortality rates and delivering premium prices at overseas seafood markets.</p>
+        `,
+        takeaways: [
+          "Chilling seawater to controlled holding temperatures cuts nitrogenous excretion and oxygen consumption in half.",
+          "High-capacity protein skimmers strip mucus and organics before surfactant foam can foul holding raceways.",
+          "Pre-export purging protocols ensure animals arrive at international destinations alert, vigorous, and marketable."
+        ]
+      },
+      "3": {
+        id: "3",
+        title: "Red Tide Mitigation & High-Capacity Water Filtration (1,200,000 L/h)",
+        category: "pools",
+        categoryName: "Specialist Pools & Filtration",
+        date: "22 Aug 2026",
+        readTime: "5 min read",
+        img: "assets/projects/01_Red_Tide_Mitigation_Filtration_System.png",
+        content: `
+          <p>Harmful algal blooms (HABs), commonly known as red tides, present a severe hazard along the Southern African coastline. When massive blooms of dinoflagellates collapse, bacterial decomposition strips seawater of all dissolved oxygen, while toxic species release potent neurotoxins that cause mass mortalities in coastal abalone farms, oyster hatcheries, and live holding facilities.</p>
+          
+          <h2>Engineering a 1,200,000 Litre/Hour Defense Infrastructure</h2>
+          <p>To protect a premier coastal aquaculture facility from catastrophic red tide exposure, Deep Blue Aqua designed, fabricated, and commissioned a massive 1,200,000 litres per hour (1.2M L/h) emergency filtration plant.</p>
+          
+          <h2>Dual-Stage Mechanical & Depth Treatment</h2>
+          <p>The system pairs high-volume intake pumping with high-capacity micro-screen drum filters and specialized pressure media vessels. During bloom events, raw ocean water is filtered to strip cellular dinoflagellates and organic slime, preventing toxic biomass from penetrating shore-based holding raceways.</p>
+          
+          <h2>Continuous Operational Resilience</h2>
+          <p>The 1.2M L/h installation proved capable of maintaining pristine water exchange and high dissolved oxygen levels during severe ocean bloom events, saving millions of Rands in vulnerable aquaculture livestock.</p>
+        `,
+        takeaways: [
+          "High-capacity mechanical and depth filtration removes dense algal cells before toxic decay occurs.",
+          "Processing 1,200,000 litres per hour ensures uninterrupted production water supply for large commercial facilities.",
+          "Rapid-deployment emergency filtration shields land-based aquaculture investments from unpredictable oceanic red tides."
+        ]
+      },
+      "4": {
+        id: "4",
+        title: "How Natural Swimming Pool Filtration Works",
+        category: "pools",
+        categoryName: "Specialist Pools",
+        date: "15 Aug 2026",
+        readTime: "4 min read",
+        img: "assets/projects/02_Natural_Pool_01.png",
+        content: `
+          <p>Natural swimming pools and eco-pools offer the ultimate luxury: crystal-clear swimming water that feels soft on the skin and contains zero chlorine, salt-cell generators, or toxic chemical biocides.</p>
+          
+          <h2>The Living Ecosystem Approach</h2>
+          <p>Rather than sterilizing water with aggressive chemicals, natural pools replicate the biological purification processes found in mountain streams and oligotrophic freshwater lakes. A natural pool is divided into two distinct zones: a swimming zone and a biological regeneration zone.</p>
+          
+          <h2>The Regeneration Biofilter Bed</h2>
+          <p>Water from the swimming area flows through specialized skimmers into a biological wetland bed layered with graded volcanic aggregates and nutrient-absorbing aquatic plants. Beneficial aerobic microorganisms colonize the gravel bed, breaking down organic contaminants, binding phosphates, and converting nutrients into harmless biomass before algae can exploit them.</p>
+          
+          <h2>Gentle Circulation & Living Clarity</h2>
+          <p>Low-voltage, energy-efficient pumps circulate water continuously through the regeneration zone. Combined with fine mechanical pre-filtration and optional low-dose UVC sterilizers, natural pools in the Helderberg and Western Cape regions provide year-round swimming comfort with minimal operating costs.</p>
+        `,
+        takeaways: [
+          "Biological nutrient deprivation prevents algae blooms without requiring chlorine or synthetic biocides.",
+          "Regeneration wetlands provide natural biofiltration while seamlessly blending into garden architecture.",
+          "Energy-efficient circulation and zero chemical expenditure drastically lower ongoing maintenance costs."
+        ]
+      },
+      "5": {
+        id: "5",
+        title: "CAPEX and OPEX Considerations When Planning an Aquaculture Facility",
+        category: "design",
+        categoryName: "System Design & Consulting",
+        date: "05 Aug 2026",
+        readTime: "6 min read",
+        img: "assets/services/01_Aquaculture/0012_Abalone-farm.jpg",
+        content: `
+          <p>Establishing a commercial aquaculture venture in Africa requires balancing upfront capital expenditure (CAPEX) with long-term operating costs (OPEX). Many facilities struggle not from biological failure, but because poorly engineered hydraulics impose crippling monthly electricity and liquid oxygen expenses.</p>
+          
+          <h2>Hydraulic Head Loss & Lifetime Pump Energy</h2>
+          <p>Pumps operate 24 hours a day, 365 days a year. Every additional metre of hydraulic head loss caused by undersized piping, excessive 90-degree elbows, or high-friction filters adds thousands of kilowatt-hours to the monthly power bill. Deep Blue Aqua designs gravity-balanced systems with low-head, high-efficiency propeller and axial-flow pumps to minimize energy draw.</p>
+          
+          <h2>Right-Sizing Oxygenation Systems</h2>
+          <p>Liquid oxygen (LOX) or pressure-swing adsorption (PSA) oxygen generators represent major ongoing OPEX lines. Utilizing high-efficiency oxygen cones and counter-current dissolution columns achieves greater than 90% gas absorption efficiency, cutting oxygen waste and operating expenses significantly.</p>
+          
+          <h2>Modular Phased Expansion</h2>
+          <p>Starting with modular tanks and skid-mounted filtration allows operators to validate production models and build cash flow before scaling up capital infrastructure. Pre-fabricated fibreglass (GRP) and high-density polyethylene (HDPE) components provide flexible, cost-effective expansion paths.</p>
+        `,
+        takeaways: [
+          "Optimizing hydraulic head loss is the single most effective way to lower 24/7 pumping power costs.",
+          "High-efficiency oxygen cones achieve >90% transfer efficiency, significantly lowering oxygen generation OPEX.",
+          "Phased modular construction mitigates initial financial risk and aligns capital outlays with harvest revenue."
+        ]
+      }
+    };
+
+    // Navigation and Mobile Menu
+    const menuBtn = document.querySelector('.menu');
+    const navEl = document.querySelector('nav');
+    const navCloseBtn = document.querySelector('.nav-close-btn');
+
+    if (menuBtn && navEl) {
+      menuBtn.addEventListener('click', () => {
+        const isOpen = navEl.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', isOpen);
+      });
+    }
+    if (navCloseBtn && navEl) {
+      navCloseBtn.addEventListener('click', () => {
+        navEl.classList.remove('open');
+        if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    // Determine current article ID from URL query
+    const urlParams = new URLSearchParams(window.location.search);
+    const requestedId = urlParams.get('id') || 'featured';
+    const article = articlesDatabase[requestedId] || articlesDatabase['featured'];
+    const articleIdList = Object.keys(articlesDatabase);
+    const currentIndex = articleIdList.indexOf(article.id);
+
+    // Populate Current Article Data
+    document.title = `${article.title} | Deep Blue Aqua`;
+    const metaDesc = document.querySelector('#metaDescription');
+    if (metaDesc) metaDesc.setAttribute('content', `${article.title}. Aquatic engineering guide from Deep Blue Aqua.`);
+
+    document.getElementById('heroCategoryText').textContent = article.categoryName;
+    document.getElementById('heroArticleTitle').textContent = article.title;
+    document.getElementById('articleCategoryPill').textContent = article.categoryName;
+    document.getElementById('articleDate').textContent = article.date;
+    document.getElementById('articleReadTime').textContent = article.readTime;
+    document.getElementById('articleTitle').textContent = article.title;
+    
+    const heroImg = document.getElementById('articleHeroImg');
+    heroImg.src = article.img;
+    heroImg.alt = article.title;
+
+    document.getElementById('articleContent').innerHTML = article.content;
+
+    // Pre-select service in sidebar contact form based on article category
+    const serviceSelect = document.getElementById('sidebarService');
+    if (serviceSelect) {
+      if (article.category === 'ras') serviceSelect.value = 'Recirculating Aquaculture Systems (RAS)';
+      else if (article.category === 'monitoring') serviceSelect.value = 'Water Quality Monitoring';
+      else if (article.category === 'holding') serviceSelect.value = 'Live Holding Systems';
+      else if (article.category === 'pools') serviceSelect.value = 'Specialist Swimming Pools';
+      else if (article.category === 'design') serviceSelect.value = 'Design & Consulting';
+    }
+
+    // Populate Relevant Blogs Widget on the Left Sidebar
+    // Filter articles in same category excluding current article; if fewer than 2, pull other articles
+    const relevantListEl = document.getElementById('relevantBlogsList');
+    document.getElementById('relevantHeading').textContent = `Related in ${article.categoryName.split('&')[0].trim()}`;
+    
+    let relatedArticles = Object.values(articlesDatabase).filter(a => a.id !== article.id && a.category === article.category);
+    if (relatedArticles.length === 0) {
+      // If none in same category, show other top engineering articles
+      relatedArticles = Object.values(articlesDatabase).filter(a => a.id !== article.id);
+    } else if (relatedArticles.length < 2) {
+      // Complement with another category to keep sidebar rich
+      const extra = Object.values(articlesDatabase).filter(a => a.id !== article.id && a.category !== article.category);
+      relatedArticles = relatedArticles.concat(extra.slice(0, 2 - relatedArticles.length));
+    }
+
+    relevantListEl.innerHTML = relatedArticles.map(rel => `
+      <a href="blog-post.html?id=${rel.id}" class="relevant-blog-item" title="${rel.title}">
+        <img src="${rel.img}" alt="${rel.title}" class="relevant-blog-img" loading="lazy">
+        <div class="relevant-blog-info">
+          <span class="relevant-blog-tag">${rel.categoryName}</span>
+          <h4 class="relevant-blog-title">${rel.title}</h4>
+          <div class="relevant-blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> ${rel.date}</span>
+            <span>•</span>
+            <span><i class="fa-regular fa-clock"></i> ${rel.readTime}</span>
+          </div>
+        </div>
+      </a>
+    `).join('');
+
+    // Previous & Next Article Navigation
+    const prevIndex = (currentIndex - 1 + articleIdList.length) % articleIdList.length;
+    const nextIndex = (currentIndex + 1) % articleIdList.length;
+    const prevArt = articlesDatabase[articleIdList[prevIndex]];
+    const nextArt = articlesDatabase[articleIdList[nextIndex]];
+
+    const prevLink = document.getElementById('prevArticleLink');
+    const nextLink = document.getElementById('nextArticleLink');
+    if (prevArt) {
+      prevLink.href = `blog-post.html?id=${prevArt.id}`;
+      document.getElementById('prevArticleTitle').textContent = prevArt.title;
+    }
+    if (nextArt) {
+      nextLink.href = `blog-post.html?id=${nextArt.id}`;
+      document.getElementById('nextArticleTitle').textContent = nextArt.title;
+    }
+
+    // Social Media Share URLs
+    const currentUrl = window.location.href;
+    const shareTitle = encodeURIComponent(`${article.title} | Deep Blue Aqua`);
+    const encodedUrl = encodeURIComponent(currentUrl);
+
+    function setupSocialShare(prefix) {
+      const waBtn = document.getElementById(`shareWa${prefix}`);
+      const liBtn = document.getElementById(`shareLi${prefix}`);
+      const fbBtn = document.getElementById(`shareFb${prefix}`);
+      const twBtn = document.getElementById(`shareTw${prefix}`);
+      const emBtn = document.getElementById(`shareEmail${prefix}`);
+      const copyBtn = document.getElementById(`shareCopy${prefix}`);
+      const toast = document.getElementById(`copyToast${prefix}`);
+
+      if (waBtn) waBtn.href = `https://api.whatsapp.com/send?text=${shareTitle}%20${encodedUrl}`;
+      if (liBtn) liBtn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+      if (fbBtn) fbBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+      if (twBtn) twBtn.href = `https://twitter.com/intent/tweet?text=${shareTitle}&url=${encodedUrl}`;
+      if (emBtn) emBtn.href = `mailto:?subject=${shareTitle}&body=Read%20this%20technical%20article%20from%20Deep%20Blue%20Aqua:%0A%0A${encodedUrl}`;
+
+      if (copyBtn && toast) {
+        copyBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(currentUrl).then(() => {
+              showToast(toast);
+            }).catch(() => fallbackCopy(currentUrl, toast));
+          } else {
+            fallbackCopy(currentUrl, toast);
+          }
+        });
+      }
+    }
+
+    function showToast(toastEl) {
+      toastEl.style.display = 'block';
+      setTimeout(() => {
+        toastEl.style.display = 'none';
+      }, 3000);
+    }
+
+    function fallbackCopy(text, toastEl) {
+      const tempInput = document.createElement('input');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast(toastEl);
+    }
+
+    setupSocialShare('Top');
+    setupSocialShare('Bottom');
+
+    // Sidebar Contact Form Submission
+    const contactForm = document.getElementById('sidebarContactForm');
+    const successMsg = document.getElementById('sidebarFormSuccess');
+    if (contactForm && successMsg) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+        
+        setTimeout(() => {
+          submitBtn.style.display = 'none';
+          successMsg.style.display = 'flex';
+          contactForm.reset();
+        }, 700);
+      });
+    }
+
+    // Mobile navigation drawer & backdrop
+    const menuBtn = document.querySelector('.menu');
+    const nav = document.querySelector('nav');
+    let navBackdrop = document.querySelector('.dba-backdrop');
+    if (!navBackdrop) {
+      navBackdrop = document.createElement('div');
+      navBackdrop.className = 'dba-backdrop';
+      navBackdrop.id = 'dbaNavBackdrop';
+      document.body.appendChild(navBackdrop);
+    }
+
+    function openNavDrawer() {
+      if (!nav) return;
+      nav.classList.add('open');
+      navBackdrop.classList.add('active');
+      document.body.classList.add('nav-open');
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNavDrawer() {
+      if (!nav) return;
+      nav.classList.remove('open');
+      navBackdrop.classList.remove('active');
+      document.body.classList.remove('nav-open');
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    if (menuBtn) {
+      menuBtn.onclick = (e) => {
+        e.stopPropagation();
+        if (nav && nav.classList.contains('open')) {
+          closeNavDrawer();
+        } else {
+          openNavDrawer();
+        }
+      };
+    }
+
+    navBackdrop.onclick = closeNavDrawer;
+    document.querySelectorAll('.nav-close-btn').forEach(btn => btn.onclick = closeNavDrawer);
+    document.querySelectorAll('nav a:not(.dropdown-item):not(.nav-link-main)').forEach(a => a.addEventListener('click', closeNavDrawer));
+
+    // Services dropdown mobile toggle
+    const mobileDropToggle = document.querySelector('.mobile-dropdown-toggle');
+    const servicesDrop = document.querySelector('#servicesDropdown');
+    if (mobileDropToggle && servicesDrop) {
+      mobileDropToggle.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = servicesDrop.classList.contains('mobile-expanded');
+        if (isOpen) {
+          servicesDrop.classList.remove('mobile-expanded');
+          mobileDropToggle.classList.remove('active');
+          mobileDropToggle.setAttribute('aria-expanded', 'false');
+        } else {
+          servicesDrop.classList.add('mobile-expanded');
+          mobileDropToggle.classList.add('active');
+          mobileDropToggle.setAttribute('aria-expanded', 'true');
+        }
+      };
+    }
+  </script>
+
+  <!-- Global scripts for quote modal & chat widget -->
+  <script src="quote-modal.js"></script>
+  <script src="chat-widget.js"></script>
+</body>
+</html>

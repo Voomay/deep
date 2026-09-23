@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none" class="brand-logo-svg">
+  <!-- Agrico Chevron / Water Management Badge -->
+  <g transform="translate(10, 6)">
+    <circle cx="24" cy="24" r="21" stroke="#111827" stroke-width="3.5" fill="none"/>
+    <path d="M14 28 L24 16 L34 28" stroke="#111827" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M17 34 L24 25 L31 34" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <!-- Agrico Wordmark -->
+  <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="2.5" fill="#111827">AGRICO</text>
+  <text x="69" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8" font-weight="700" letter-spacing="2.5" fill="#4b5563">WATER &amp; IRRIGATION</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none" class="brand-logo-svg">
+  <!-- Droplet & Sprout Mark -->
+  <g transform="translate(10, 8)">
+    <path d="M22 2 C22 2, 4 23, 4 33 C4 43 12 48 22 48 C32 48 40 43 40 33 C40 23, 22 2, 22 2 Z" stroke="#111827" stroke-width="3" fill="none"/>
+    <!-- Internal leaf/drip channel -->
+    <path d="M22 14 C22 14, 14 26, 14 33 C14 38 18 41 22 41 C26 41 30 38 30 33 C30 26, 22 14, 22 14 Z" fill="#111827"/>
+    <circle cx="22" cy="27" r="2.5" fill="#ffffff"/>
+  </g>
+  <!-- Netafim Wordmark -->
+  <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="2" fill="#111827">NETAFIM</text>
+  <text x="69" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8" font-weight="700" letter-spacing="2.5" fill="#4b5563">GROW MORE WITH LESS</text>
+</svg>
