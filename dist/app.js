@@ -622,12 +622,6 @@ if (servicesTrack) {
 // ============================================================
 (() => {
   const heroSlides = document.querySelectorAll('.hero-slide');
-  const heroDots = document.querySelectorAll('.hero-dot');
-  const heroSlideCaption = document.getElementById('heroSlideCaption');
-  const heroPrev = document.getElementById('heroPrev');
-  const heroNext = document.getElementById('heroNext');
-  const heroSection = document.getElementById('home');
-
   if (!heroSlides.length) return;
 
   let currentSlide = 0;
@@ -638,56 +632,14 @@ if (servicesTrack) {
     heroSlides.forEach((s, i) => {
       s.classList.toggle('active', i === currentSlide);
     });
-    heroDots.forEach((d, i) => {
-      d.classList.toggle('active', i === currentSlide);
-    });
-    if (heroSlideCaption && heroSlides[currentSlide]) {
-      heroSlideCaption.textContent = heroSlides[currentSlide].getAttribute('data-caption') || '';
-    }
   };
 
   const startAutoPlay = () => {
-    stopAutoPlay();
+    if (slideTimer) clearInterval(slideTimer);
     slideTimer = setInterval(() => {
       showSlide(currentSlide + 1);
     }, 5000);
   };
-
-  const stopAutoPlay = () => {
-    if (slideTimer) {
-      clearInterval(slideTimer);
-      slideTimer = null;
-    }
-  };
-
-  if (heroPrev) {
-    heroPrev.addEventListener('click', (e) => {
-      e.preventDefault();
-      showSlide(currentSlide - 1);
-      startAutoPlay();
-    });
-  }
-
-  if (heroNext) {
-    heroNext.addEventListener('click', (e) => {
-      e.preventDefault();
-      showSlide(currentSlide + 1);
-      startAutoPlay();
-    });
-  }
-
-  heroDots.forEach((dot, idx) => {
-    dot.addEventListener('click', (e) => {
-      e.preventDefault();
-      showSlide(idx);
-      startAutoPlay();
-    });
-  });
-
-  if (heroSection) {
-    heroSection.addEventListener('mouseenter', stopAutoPlay);
-    heroSection.addEventListener('mouseleave', startAutoPlay);
-  }
 
   startAutoPlay();
 })();
