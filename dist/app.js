@@ -3,7 +3,7 @@ const services = [
     name: 'Aquaculture Systems',
     desc: 'Turnkey freshwater & marine hatcheries, grow-out and R&D facilities.',
     icon: 'fa-solid fa-fish',
-    img: 'assets/services/01_Aquaculture/0000_Trout-in-hatchery.jpg',
+    img: 'assets/services/01_Aquaculture/0000_Trout-in-hatchery.webp',
     tag: 'Turnkey Hatcheries',
     href: 'services.html#service-aquaculture'
   },
@@ -11,15 +11,23 @@ const services = [
     name: 'Recirculating Aquaculture (RAS)',
     desc: 'Advanced closed-loop biofiltration, drum filters & water reuse.',
     icon: 'fa-solid fa-arrows-spin',
-    img: 'assets/projects/06_Trout_Hatchery_RAS.png',
+    img: 'assets/projects/06_Trout_Hatchery_RAS.webp',
     tag: 'Closed-Loop RAS',
     href: 'services.html#service-ras'
+  },
+  {
+    name: 'Agricultural Water Systems',
+    desc: 'Borehole & dam water treatment, irrigation filtration, solar pumps & farm aquaponics.',
+    icon: 'fa-solid fa-wheat-awn',
+    img: 'assets/ruben/IMG_8463.webp',
+    tag: 'Farm Water Systems',
+    href: 'agriculture.html'
   },
   {
     name: 'Live Holding Systems',
     desc: 'Stable water environments for lobster, abalone & shellfish export.',
     icon: 'fa-solid fa-shrimp',
-    img: 'assets/services/02_Live_Holding/0001_South-Coast-rock-lobster.jpg',
+    img: 'assets/services/02_Live_Holding/0001_South-Coast-rock-lobster.webp',
     tag: 'Live Seafood Holding',
     href: 'services.html#service-live-holding'
   },
@@ -27,7 +35,7 @@ const services = [
     name: 'Commercial Aquarium Systems',
     desc: 'Life-support systems, public exhibits & restaurant display holding.',
     icon: 'fa-solid fa-water',
-    img: 'assets/services/03_Aquariums/0001_Protein-Skimmers-at-Two-Oceans-Aquarium.jpg',
+    img: 'assets/services/03_Aquariums/0001_Protein-Skimmers-at-Two-Oceans-Aquarium.webp',
     tag: 'Life Support (LSS)',
     href: 'services.html#service-aquarium'
   },
@@ -35,7 +43,7 @@ const services = [
     name: 'Monitoring & Control Systems',
     desc: 'Dissolved oxygen, pH, temperature sensors, datalogging & alarms.',
     icon: 'fa-solid fa-chart-line',
-    img: 'assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.jpg',
+    img: 'assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.webp',
     tag: 'Sensors & Automation',
     href: 'services.html#service-monitoring'
   },
@@ -43,7 +51,7 @@ const services = [
     name: 'Specialist Swimming Pools',
     desc: 'Dependable filtration for school, 50m commercial and eco-pools.',
     icon: 'fa-solid fa-person-swimming',
-    img: 'assets/projects/02_Natural_Pool_01.png',
+    img: 'assets/ruben/IMG_5367.webp',
     tag: '50m & Natural Pools',
     href: 'services.html#service-pools'
   },
@@ -51,7 +59,7 @@ const services = [
     name: 'Design, Consulting & Supply',
     desc: 'System modelling, AutoCAD schematics, GRP/HDPE tanks & pumps.',
     icon: 'fa-solid fa-compass-drafting',
-    img: 'assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.jpg',
+    img: 'assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.webp',
     tag: 'Engineering & Supply',
     href: 'services.html#service-consulting'
   }
@@ -62,58 +70,66 @@ const btn = (label, target) => `<a class="button" href="${target}">${label} <i c
 const head = (eye, title, label, target) => `<div class="section-head"><div><div class="eyebrow">${eye}</div><h2>${title}</h2></div>${btn(label, target)}</div>`;
 
 const projects = [
-  ['High-Capacity Red Tide Mitigation Filtration', 'Large-scale 1,200,000 L/h filtration infrastructure developed for coastal red-tide protection.', 'West Coast, SA', 'assets/projects/01_Red_Tide_Mitigation_Filtration_System.png'],
-  ['Commercial Recirculating Aquaculture (RAS)', 'Advanced closed-loop recirculating aquaculture facility with drum filtration and water conditioning loops.', 'Western Cape, SA', 'assets/projects/aquaculture_ras_facility.jpg'],
-  ['Trout Hatchery & Juvenile RAS', 'Full recirculating aquaculture system incorporating fibreglass tanks and specialist filtration.', 'Western Cape, SA', 'assets/projects/06_Trout_Hatchery_RAS.png'],
-  ['Marine Seawater Pump Station & Reticulation', 'Coastal intake pumping station with high-volume manifold distribution and automated switchgear.', 'Atlantic Coast, SA', 'assets/projects/coastal_pump_station.jpg'],
-  ['Natural Swimming Pools & Eco-Pools', 'Specialist biological filtration combining natural aquatic environments with pure water.', 'Helderberg, WC', 'assets/projects/02_Natural_Pool_01.png'],
-  ['50m Outdoor Swimming Pool', 'Specialist high-demand filtration and aquatic infrastructure for a 50-metre commercial pool.', 'Western Cape, SA', 'assets/projects/07_Outdoor_50m_Swimming_Pool.png'],
-  ['Offshore Lobster Vessel Live Holding', 'Custom sea-water live-well filtration and chilling circuit retrofitted to commercial fishing vessel.', 'Atlantic Coast, SA', 'assets/services/02_Live_Holding/0003_Lobster-fishing-vessel-live-holding-system.jpg'],
-  ['Two Oceans Aquarium Life-Support Systems', 'High-capacity industrial foam fractionators and marine life support infrastructure for public exhibits.', 'Cape Town, SA', 'assets/services/03_Aquariums/0001_Protein-Skimmers-at-Two-Oceans-Aquarium.jpg']
+  ['High-Capacity Red Tide Filtration', '1,200,000 L/h coastal seawater filtration plant developed for red-tide protection.', 'West Coast, SA', 'assets/ruben/IMG_3105.webp', 'Site Photo'],
+  ['Three Streams Trout Live Logistics', 'Turnkey oxygenated live-haul and holding tanks for leading Franschhoek trout producer.', 'Franschhoek, SA', 'assets/ruben/IMG_6661.webp', 'Site Photo'],
+  ['Commercial Greenhouse Aquaponics', 'Integrated commercial recirculating aquaponics with deep-water culture hydroponic beds.', 'Western Cape, SA', 'assets/ruben/IMG_8463.webp', 'Site Photo'],
+  ['Mountain Solar Pump Station', 'Off-grid ground-mount solar PV array powering high-lift agricultural dam pumping.', 'Western Cape, SA', 'assets/ruben/IMG_3311.webp', 'Site Photo'],
+  ['Commercial RAS Manifold & Pumps', 'Turnkey 8-pump primary and secondary recirculation room supporting commercial finfish RAS.', 'Western Cape, SA', 'assets/ruben/IMG_2598.webp', 'Site Photo'],
+  ['Oceanfront Coastal Eco-Pool', 'Chemical-free natural swimming pool with biological wetland filtration on the Atlantic coast.', 'Atlantic Coast, SA', 'assets/ruben/IMG_5367.webp', 'Site Photo'],
+  ['Two Oceans Aquarium Life-Support', 'Industrial foam fractionators and protein skimmers for marine predator exhibits.', 'Cape Town, SA', 'assets/services/03_Aquariums/0001_Protein-Skimmers-at-Two-Oceans-Aquarium.webp', 'Site Photo'],
+  ['50m Outdoor Swimming Pool', 'High-rate commercial turnover filtration and automated dosing infrastructure for 50m pool.', 'Western Cape, SA', 'assets/projects/07_Outdoor_50m_Swimming_Pool.webp', '3D Engineering Design']
 ];
 
 const articles = [
-  ['18 Sep 2026', 'What Is a Recirculating Aquaculture System (RAS)?', 'assets/projects/06_Trout_Hatchery_RAS.png', 'Recirculating Aquaculture Systems allow water to be treated and reused rather than continuously discharged, giving complete control over biological parameters.', '5 min read'],
-  ['12 Sep 2026', 'How Drum Filters Work in Aquaculture', 'assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.jpg', 'Mechanical solids removal is the first critical barrier in modern RAS. Explore how automatic self-cleaning drum filters eliminate waste before biological breakdown.', '4 min read'],
-  ['04 Sep 2026', 'Why Water Quality Monitoring Matters in Aquaculture', 'assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.jpg', 'From continuous optical dissolved oxygen sensing to automated multi-parameter telemetry, reliable data logging and alarms safeguard valuable aquatic life.', '6 min read']
+  ['18 Sep 2026', 'What Is a Recirculating Aquaculture System (RAS)?', 'assets/projects/06_Trout_Hatchery_RAS.webp', 'Recirculating Aquaculture Systems allow water to be treated and reused rather than continuously discharged, giving complete control over biological parameters.', '5 min read', 'blog-post.html?article=ras-guide'],
+  ['12 Sep 2026', 'How Drum Filters Work in Aquaculture & Agriculture', 'assets/ruben/IMG_4619.webp', 'Mechanical solids removal is the first critical barrier in modern water systems. Explore how automatic self-cleaning drum filters eliminate waste before breakdown.', '4 min read', 'blog-post.html?article=drum-filters'],
+  ['04 Sep 2026', 'Why Water Quality Monitoring Matters', 'assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.webp', 'From continuous optical dissolved oxygen sensing to automated multi-parameter telemetry, reliable data logging and alarms safeguard valuable aquatic life.', '6 min read', 'blog-post.html?article=monitoring-systems']
 ];
 
 const testimonials = [
   {
-    name: 'Pieter V...',
-    role: 'Commercial Marine Hatchery Manager',
-    region: 'Western Cape',
-    quote: 'Deep Blue Aqua engineered our complete recirculating hatchery system. Water quality parameters and dissolved oxygen levels remain flawlessly stable, resulting in superior juvenile survival rates.'
+    name: 'Two Oceans Aquarium Operations',
+    role: 'Curatorial & Life-Support Systems (LSS)',
+    region: 'V&A Waterfront, Cape Town',
+    quote: 'Deep Blue Aqua engineered the high-capacity foam fractionation and life-support systems for our marine exhibits. Water clarity and gas-exchange stability have been outstanding across high visitor seasons.'
   },
   {
-    name: 'David C...',
-    role: 'Operations Director, Live Seafood Exports',
-    region: 'Southern Africa',
-    quote: 'Their live lobster and abalone holding systems maintain ideal temperature and biofiltration across pre-export cycles. Mortality has dropped to virtually zero during peak seasons.'
+    name: 'Three Streams Trout Farm',
+    role: 'Commercial Aquaculture Operations',
+    region: 'Franschhoek Valley, Western Cape',
+    quote: 'Their customized live-haul oxygenation circuits and holding manifolds maintain optimal dissolved oxygen for our trout stocks across challenging transport logistics.'
   },
   {
-    name: 'Marius S...',
-    role: 'Facilities Director, Helderberg Aquatic Centre',
+    name: 'Walker Bay Commercial Marine Hatchery',
+    role: 'Abalone & Marine Hatchery Operations',
+    region: 'Hermanus Coast, Western Cape',
+    quote: 'Operating a high-density marine hatchery requires zero tolerance for water-quality failures. Deep Blue Aqua’s biofiltration and sensor telemetry have delivered flawless reliability.'
+  },
+  {
+    name: 'Helderberg Aquatic Centre Facilities',
+    role: 'Facilities Management (50m Pool & Eco-Pool)',
     region: 'Western Cape',
     quote: 'Managing a high-demand 50m pool and natural eco-pool requires proven hydraulic design. Deep Blue Aqua delivered robust filtration infrastructure that performs day in and day out.'
   }
 ];
 
 const agentLogos = [
-  { name: "Faivre", src: "assets/brands/agent-faivre.jpg", alt: "Faivre Aquaculture Machinery & Drum Filters" },
-  { name: "Linn Aqua", src: "assets/brands/agent-linn-aqua.jpg", alt: "Linn Aqua Water Treatment & Aeration" },
-  { name: "OxyGuard", src: "assets/brands/agent-oxyguard.jpg", alt: "OxyGuard Water Monitoring & Control Systems" },
-  { name: "Campbell Scientific", src: "assets/brands/agent-campbell-scientific.jpg", alt: "Campbell Scientific Measurement & Control Instrumentation" }
+  { name: "Faivre", src: "assets/brands/agent-faivre.webp", alt: "Faivre Aquaculture Machinery & Drum Filters" },
+  { name: "Rainbow Reservoirs", src: "assets/brands/agent-rainbow.png", alt: "Rainbow Reservoirs Premium Water Storage" },
+  { name: "Aqualabo", src: "assets/brands/agent-aqualabo.png", alt: "Aqualabo Water Quality Sensors & Instrumentation" },
+  { name: "OxyGuard", src: "assets/brands/agent-oxyguard.webp", alt: "OxyGuard Water Monitoring & Control Systems" },
+  { name: "Campbell Scientific", src: "assets/brands/agent-campbell-scientific.webp", alt: "Campbell Scientific Measurement & Telemetry" },
+  { name: "Linn Aqua", src: "assets/brands/agent-linn-aqua.webp", alt: "Linn Aqua Water Treatment & Aeration" }
 ];
 const partnerLogos = agentLogos;
 
 document.querySelector('#sections').innerHTML = `
-  <!-- Services Section (4-Card Visible Carousel with Real Photos) -->
+  <!-- Services Section (Visible Carousel with Real Photos) -->
   <section id="services" class="section wrap tint">
     <div class="services-head">
       <div>
         <div class="eyebrow">OUR SERVICES</div>
-        <h2>Specialist Aquatic Systems</h2>
+        <h2>Specialist Aquatic &amp; Water Systems</h2>
       </div>
       <div class="services-header-actions">
         <a class="button" href="services.html">Explore All Solutions <i class="fa-solid fa-arrow-right"></i></a>
@@ -147,8 +163,7 @@ document.querySelector('#sections').innerHTML = `
   <!-- Intelligent Automation Section with Water Video Background -->
   <section class="automation">
     <div class="video-bg-container" aria-hidden="true">
-      <video class="video-bg-media" autoplay muted loop playsinline poster="assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.jpg">
-        <source src="assets/water-filtration-hd.webm" type="video/webm">
+      <video class="video-bg-media" autoplay muted loop playsinline preload="none" poster="assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.webp">
         <source src="assets/water-filtration.webm" type="video/webm">
       </video>
       <div class="video-bg-overlay"></div>
@@ -168,13 +183,43 @@ document.querySelector('#sections').innerHTML = `
     </div>
   </section>
 
+  <!-- Agricultural Solutions Feature Band (Farms & Irrigation) -->
+  <section class="section wrap" style="padding-top:40px;padding-bottom:40px;">
+    <div class="agri-band-box">
+      <div class="agri-band-split">
+        <div class="agri-band-content">
+          <span class="eyebrow" style="color:#059669;"><i class="fa-solid fa-wheat-awn"></i> TURNKEY FARM WATER SYSTEMS</span>
+          <h2>Water Solutions for Agriculture &amp; Commercial Farms</h2>
+          <p>From borehole iron and manganese filtration to automatic self-cleaning Faivre drum filters for drip irrigation, mountain solar pump houses, and biosecure livestock water.</p>
+          <div class="agri-band-tags">
+            <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Borehole Iron &amp; Manganese Removal</span>
+            <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Faivre Drum Filtration for Irrigation</span>
+            <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Mountain Solar Pump Stations</span>
+            <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Biosecure Livestock Water Treatment</span>
+          </div>
+          <div class="agri-band-actions">
+            <a class="button glow agri-cta-btn" href="agriculture.html">Explore Agricultural Systems <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="agri-quote-btn" href="contact.html?service=Agriculture" data-quote-trigger><i class="fa-solid fa-calculator"></i> Request Farm Quote</a>
+          </div>
+        </div>
+        <div class="agri-band-media">
+          <img src="assets/ruben/IMG_8463.webp" alt="Commercial greenhouse aquaponics and farm water treatment" loading="lazy">
+          <div class="agri-media-caption">
+            <strong>Commercial Greenhouse Aquaponics &amp; Farm Water</strong>
+            <span>Western Cape, South Africa • Deep Blue Aqua</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Why Choose Us Section (Two-Part Split: Image + 4 Core Points) -->
   <section class="section wrap why-choose-section" id="why-choose-us">
     ${head('WHY CHOOSE DEEP BLUE AQUA?', 'More Than Equipment. A Complete Technical Partner.', 'Discuss Your Project', 'contact.html')}
     <div class="why-choose-split">
       <!-- Part 1: Left Engineered Project Media with Trust Highlights -->
       <div class="why-choose-media">
-        <img src="assets/projects/01_Red_Tide_Mitigation_Filtration_System.png" alt="Deep Blue Aquatic Systems technical installation" class="why-choose-img" loading="lazy">
+        <img src="assets/ruben/IMG_3105.webp" alt="Deep Blue Aquatic Systems technical installation" class="why-choose-img" loading="lazy">
         <div class="why-media-badge">
           <div class="wm-stat">
             <strong>15+ Yrs</strong>
@@ -227,14 +272,18 @@ document.querySelector('#sections').innerHTML = `
     </div>
   </section>
 
-  <!-- Featured Projects (High-Res 16:9 Wide Images) -->
+  <!-- Featured Projects (With Real Ruben Site Photos & Labels) -->
   <section class="section wrap tint" id="projects">
-    ${head('FEATURED PROJECTS', 'Real Systems. Real Environments.', 'View All Projects', 'services.html')}
-    <div class="cards projects">
+    ${head('FEATURED PROJECTS', 'Real Systems. Real Environments.', 'View All Projects & Case Studies', 'projects.html')}
+    <div class="cards projects" id="homeProjectsGrid">
       ${projects.map((p, i) => `
-        <a class="card project-card" href="contact.html?project=${encodeURIComponent(p[0])}">
+        <a class="card project-card ${i >= 3 ? 'mobile-hide-project' : ''}" href="projects.html#case-studies">
           <div class="card-media">
             <img src="${p[3]}" alt="${p[0]}" class="card-img" loading="lazy">
+            ${p[4] && p[4] !== 'Site Photo' ? `
+            <span class="media-tag concept-badge">
+              <i class="fa-solid fa-compass-drafting"></i> ${p[4]}
+            </span>` : ''}
           </div>
           <div class="card-body">
             <h3>${p[0]}</h3>
@@ -244,14 +293,17 @@ document.querySelector('#sections').innerHTML = `
         </a>
       `).join('')}
     </div>
+    <div class="mobile-projects-more-cta">
+      <a class="button" href="projects.html">View All Projects &amp; Case Studies <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
   </section>
 
-  <!-- Rotating Brand Logos Section (Monochrome Black & White, Uniform Size) -->
+  <!-- Brands We Represent Section (Monochrome Black & White, Uniform Size) -->
   <section class="logos-section">
-    <div class="eyebrow">OUR AGENTS</div>
+    <div class="eyebrow">BRANDS WE REPRESENT • TECHNOLOGY PARTNERS</div>
     <div class="logos-marquee-wrapper">
       <div class="logos-slider" aria-label="Rotating International Agent Logos">
-        ${[...agentLogos, ...agentLogos, ...agentLogos, ...agentLogos, ...agentLogos, ...agentLogos].map(logo => `
+        ${[...agentLogos, ...agentLogos, ...agentLogos, ...agentLogos].map(logo => `
           <div class="agri-logo-card" title="${logo.name}">
             <img src="${logo.src}" alt="${logo.alt}" class="agri-logo-img">
           </div>
@@ -288,12 +340,12 @@ document.querySelector('#sections').innerHTML = `
     </div>
   </section>
 
-  <!-- Latest Insights (High-Res 16:9 Wide Images) -->
+  <!-- Latest Insights (High-Res 16:9 Wide Images with Direct Links) -->
   <section class="section wrap" id="blog">
     ${head('LATEST INSIGHTS', 'Knowledge From Below the Surface', 'View All Articles', 'blog.html')}
     <div class="cards articles">
       ${articles.map((a, i) => `
-        <a class="card article-card" href="blog.html">
+        <a class="card article-card" href="${a[5]}">
           <div class="card-media">
             <img src="${a[2]}" alt="${a[1]}" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> ${a[4]}</span>
@@ -315,7 +367,7 @@ document.querySelector('#sections').innerHTML = `
       <div class="cta-content">
         <span class="cta-badge"><i class="fa-solid fa-water"></i> SPECIALIST AQUATIC ENGINEERING</span>
         <h2>Have a Water Challenge? Let’s Engineer the Solution.</h2>
-        <p>From aquaculture and live holding to specialist filtration, monitoring and aquatic-system design, our team can help you develop a solution suited to your project.</p>
+        <p>From aquaculture and live holding to agricultural filtration, water monitoring and aquatic-system design, our team can help you develop a solution suited to your project.</p>
       </div>
       <div class="cta-actions">
         <a class="button glow cta-primary" href="contact.html">Discuss Your Project <i class="fa-solid fa-arrow-right"></i></a>
@@ -331,15 +383,13 @@ document.querySelector('#sections').innerHTML = `
         <!-- Brand & Summary -->
         <div class="footer-col brand-col">
           <a class="footer-brand" href="index.html" aria-label="Deep Blue Aqua">
-            <img src="assets/logo-white.png" alt="Deep Blue Aqua" class="footer-logo">
+            <img src="assets/logo-white.webp" onerror="this.onerror=null;this.src='assets/logo-white.png'" alt="Deep Blue Aqua" class="footer-logo">
           </a>
           <p class="footer-desc">
             South African aquatic engineering and water technology company specialising in the design, manufacture, supply and installation of systems where water quality, reliability and control matter.
           </p>
           <div class="footer-socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://linkedin.com/company/deep-blue-aqua" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://wa.me/27218562031" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
@@ -350,6 +400,7 @@ document.querySelector('#sections').innerHTML = `
           <ul class="footer-links">
             <li><a href="services.html#service-aquaculture"><i class="fa-solid fa-angle-right"></i> Aquaculture Systems</a></li>
             <li><a href="services.html#service-ras"><i class="fa-solid fa-angle-right"></i> Recirculating Systems (RAS)</a></li>
+            <li><a href="agriculture.html"><i class="fa-solid fa-angle-right"></i> Agricultural Water Systems</a></li>
             <li><a href="services.html#service-live-holding"><i class="fa-solid fa-angle-right"></i> Live Holding Systems</a></li>
             <li><a href="services.html#service-aquarium"><i class="fa-solid fa-angle-right"></i> Commercial Aquarium Systems</a></li>
             <li><a href="services.html#service-monitoring"><i class="fa-solid fa-angle-right"></i> Monitoring &amp; Control Systems</a></li>
@@ -363,9 +414,9 @@ document.querySelector('#sections').innerHTML = `
           <ul class="footer-links">
             <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
             <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Our Company</a></li>
-            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Specialist Solutions</a></li>
+            <li><a href="agriculture.html"><i class="fa-solid fa-angle-right"></i> Farm Water Systems</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Projects &amp; Case Studies</a></li>
             <li><a href="index.html#why-choose-us"><i class="fa-solid fa-angle-right"></i> Why Choose Us</a></li>
-            <li><a href="index.html#projects"><i class="fa-solid fa-angle-right"></i> Featured Projects</a></li>
             <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Insights &amp; Articles</a></li>
             <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Discuss Your Project</a></li>
           </ul>
@@ -417,11 +468,11 @@ document.querySelector('#sections').innerHTML = `
           <span class="tag">Specialist Aquatic Systems</span>
         </div>
         <div class="footer-legal">
-          <a href="contact.html" data-policy="Privacy Policy">Privacy Policy</a>
+          <a href="privacy.html">Privacy Policy</a>
           <span class="dot">•</span>
-          <a href="contact.html" data-policy="Terms & Conditions">Terms & Conditions</a>
+          <a href="terms.html">Terms & Conditions</a>
           <span class="dot">•</span>
-          <a href="contact.html" data-policy="Quality & Environmental Policy">Quality Policy</a>
+          <a href="quality-policy.html">Quality Policy</a>
         </div>
         <a href="#home" class="back-to-top" aria-label="Back to top">
           <span>Top</span> <i class="fa-solid fa-arrow-up"></i>
@@ -430,6 +481,7 @@ document.querySelector('#sections').innerHTML = `
     </div>
   </footer>
 `;
+
 
 // Render crop sprites for reference graphics (like header brand logo, about image, and logos)
 function renderCrops() {

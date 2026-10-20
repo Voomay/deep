@@ -3,17 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Deep Blue Aqua designs and installs aquaculture systems, RAS, live-holding systems, water-quality monitoring and specialist filtration solutions in South Africa and internationally.">
-  <title>Deep Blue Aqua | Aquaculture Systems & Water Engineering South Africa</title>
+  <meta name="description" content="Deep Blue Aqua designs and installs turnkey aquaculture systems, RAS, agricultural water treatment, live-holding systems, water-quality monitoring and specialist pools across South Africa and internationally.">
+  <title>Deep Blue Aqua | Aquaculture Systems &amp; Water Engineering South Africa</title>
+  <link rel="canonical" href="https://deepblueaqua.net/">
+  <meta property="og:title" content="Deep Blue Aqua | Aquaculture Systems & Water Engineering South Africa">
+  <meta property="og:description" content="Engineered water systems that sustain life: recirculating aquaculture (RAS), farm water systems, live seafood holding, and industrial monitoring.">
+  <meta property="og:url" content="https://deepblueaqua.net/">
+  <meta property="og:image" content="https://deepblueaqua.net/assets/og-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://deepblueaqua.net/assets/og-preview.jpg">
   <link rel="icon" href="favicon.svg">
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=4">
+
+  <!-- Schema.org JSON-LD LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Deep Blue Aquatic Systems (Pty) Ltd",
+    "url": "https://deepblueaqua.net",
+    "logo": "https://deepblueaqua.net/assets/logo.png",
+    "image": "https://deepblueaqua.net/assets/og-preview.jpg",
+    "telephone": "+27218562031",
+    "email": "info@deepblueaqua.net",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "185 Mills Street, Gants Plaza",
+      "addressLocality": "Strand",
+      "addressRegion": "Western Cape",
+      "postalCode": "7140",
+      "addressCountry": "ZA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -34.0991,
+      "longitude": 18.8477
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    "areaServed": ["Western Cape", "South Africa", "Southern Africa", "International"]
+  }
+  </script>
 </head>
 <body>
   <header>
     <a href="index.html" class="brand" aria-label="Deep Blue Aqua home">
-      <img src="assets/logo.png" alt="Deep Blue Aqua" class="brand-logo">
+      <img src="assets/logo.webp" onerror="this.onerror=null;this.src='assets/logo.png'" alt="Deep Blue Aqua" class="brand-logo">
     </a>
     <div class="mobile-header-actions">
       <a href="tel:+27218562031" class="header-call-btn" aria-label="Call 021 856 2031" title="Call 021 856 2031">
@@ -25,7 +67,7 @@
     </div>
     <nav>
       <div class="nav-header-row">
-        <img src="assets/logo.png" alt="Deep Blue Aqua" class="nav-header-logo">
+        <img src="assets/logo.webp" onerror="this.onerror=null;this.src='assets/logo.png'" alt="Deep Blue Aqua" class="nav-header-logo">
         <button type="button" class="nav-close-btn" aria-label="Close navigation">
           <i class="fa-solid fa-xmark"></i>
         </button>
@@ -57,6 +99,15 @@
                 <span class="dropdown-text">
                   <strong class="dropdown-title">Recirculating Systems (RAS)</strong>
                   <span class="dropdown-desc">Biofiltration, drum filters & foam fractionation</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="agriculture.html" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-wheat-awn"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Agricultural Water Systems</strong>
+                  <span class="dropdown-desc">Borehole, dam, irrigation & livestock water</span>
                 </span>
               </a>
             </li>
@@ -113,8 +164,8 @@
           </div>
         </div>
       </div>
-      <a href="#why-choose-us"><span>Why Choose Us</span></a>
-      <a href="#projects"><span>Projects</span></a>
+      <a href="agriculture.html"><span>Agriculture</span></a>
+      <a href="projects.html"><span>Projects</span></a>
       <a href="blog.html"><span>Insights</span></a>
       <a href="contact.html"><span>Contact Us</span></a>
       <div class="nav-drawer-actions">
@@ -134,19 +185,19 @@
   <main>
     <section class="hero" id="home">
       <div class="hero-slider" id="heroSlider">
-        <div class="hero-slide active" style="background-image: url('assets/projects/01_Red_Tide_Mitigation_Filtration_System.png');" data-caption="High-Capacity 1,200,000 L/h Coastal Seawater Filtration Plant"></div>
-        <div class="hero-slide" style="background-image: url('assets/projects/aquaculture_ras_facility.jpg');" data-caption="Commercial Recirculating Aquaculture Systems (RAS) Facility"></div>
-        <div class="hero-slide" style="background-image: url('assets/projects/06_Trout_Hatchery_RAS.png');" data-caption="Commercial Trout Hatchery &amp; Juvenile Closed-Loop RAS"></div>
-        <div class="hero-slide" style="background-image: url('assets/projects/coastal_pump_station.jpg');" data-caption="Marine Seawater Intake Pump Station &amp; Hydraulic Reticulation"></div>
-        <div class="hero-slide" style="background-image: url('assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.jpg');" data-caption="Turnkey Industrial Piping, Manifolds &amp; Biological Filtration"></div>
-        <div class="hero-slide" style="background-image: url('assets/projects/07_Outdoor_50m_Swimming_Pool.png');" data-caption="50m Commercial Outdoor Olympic Pool &amp; High-Rate Filtration"></div>
+        <div class="hero-slide active" style="background-image: url('assets/ruben/IMG_3105.webp');" data-caption="High-Capacity 1,200,000 L/h Coastal Seawater Filtration Plant"></div>
+        <div class="hero-slide" style="background-image: url('assets/ruben/IMG_8463.webp');" data-caption="Commercial Greenhouse Aquaponics &amp; Closed-Loop Hydroponics"></div>
+        <div class="hero-slide" style="background-image: url('assets/ruben/IMG_2598.webp');" data-caption="Turnkey Commercial RAS Recirculation &amp; Manifold Station"></div>
+        <div class="hero-slide" style="background-image: url('assets/ruben/IMG_3311.webp');" data-caption="Mountain Solar Pump Station &amp; Farm Dam Reticulation"></div>
+        <div class="hero-slide" style="background-image: url('assets/ruben/IMG_5367.webp');" data-caption="Atlantic Coastal Oceanfront Natural Eco-Pool"></div>
+        <div class="hero-slide" style="background-image: url('assets/ruben/IMG_6661.webp');" data-caption="Three Streams Commercial Trout Live Logistics Infrastructure"></div>
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <h1>ENGINEERED WATER<br>SYSTEMS THAT<br><em>SUSTAIN LIFE.</em></h1>
-        <p>Deep Blue Aquatic Systems designs, manufactures, supplies and installs specialised water systems for aquaculture, live holding, commercial aquariums, water-quality monitoring and specialist swimming pools.</p>
+        <p>Deep Blue Aquatic Systems designs, manufactures, supplies and installs specialised water systems for aquaculture, agriculture &amp; farms, live holding, commercial aquariums, water monitoring and specialist swimming pools.</p>
         <div class="actions">
-          <a class="button glow" href="contact.html">Discuss Your Project <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="button glow" href="contact.html" data-quote-trigger>Discuss Your Project <i class="fa-solid fa-arrow-right"></i></a>
           <a class="button dark hero-secondary-btn" href="services.html">Explore Our Solutions <i class="fa-solid fa-layer-group"></i></a>
         </div>
       </div>
@@ -183,16 +234,17 @@
         <div class="eyebrow">WHO WE ARE</div>
         <h2>Engineering Better<br>Water Environments</h2>
         <p>Deep Blue Aquatic Systems is a South African aquatic engineering and water technology company specialising in the design, manufacture, supply and installation of systems where water quality, reliability and control matter.</p>
-        <p>Our experience extends across freshwater and marine aquaculture, live seafood holding, hatcheries, recirculating aquaculture systems (RAS), research facilities, commercial aquariums, water reticulation, natural swimming pools and large specialist pool installations. Operating from Strand in the Western Cape, we undertake both South African and international work.</p>
+        <p>Our experience extends across freshwater and marine aquaculture, farm water treatment, live seafood holding, hatcheries, recirculating aquaculture systems (RAS), research facilities, commercial aquariums, water reticulation, natural swimming pools and large specialist pool installations. Operating from Strand in the Western Cape, we undertake both South African and international work.</p>
         <div class="mini-values">
           <span><i class="fa-solid fa-fish"></i> <b>AQUACULTURE<br>EXPERIENCE</b></span>
+          <span><i class="fa-solid fa-wheat-awn"></i> <b>AGRICULTURE<br>&amp; FARMS</b></span>
           <span><i class="fa-solid fa-chart-line"></i> <b>WATER QUALITY<br>MONITORING</b></span>
           <span><i class="fa-solid fa-globe"></i> <b>LOCAL &amp; GLOBAL<br>CAPABILITY</b></span>
         </div>
         <a class="button" href="about.html">About Deep Blue Aqua <i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="about-image">
-        <img src="assets/services/01_Aquaculture/0010_Fish-broodstock-tanks.jpg" alt="Deep Blue Aquatic Systems engineered circular fish broodstock tanks and recirculation" class="about-img" loading="lazy">
+        <img src="assets/services/01_Aquaculture/0010_Fish-broodstock-tanks.webp" alt="Deep Blue Aquatic Systems engineered circular fish broodstock tanks and recirculation" class="about-img" loading="lazy">
         <div class="image-note">Creating &amp; Maintaining<br>Water Environments That<br>Safely Sustain Life.<i></i></div>
       </div>
     </section>
@@ -218,7 +270,7 @@
     </button>
   </aside>
 
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=3"></script>
   <script src="quote-modal.js"></script>
   <script src="chat-widget.js"></script>
 <script src="assets/lucide.min.js"></script><script src="icons.js"></script></body>

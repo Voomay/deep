@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Explore practical insights into aquaculture technology, RAS, filtration, water quality, monitoring, live holding and sustainable aquatic-system design.">
   <title>Insights & Articles | Deep Blue Aqua - Aquaculture & Water Technology</title>
+  <link rel="canonical" href="https://deepblueaqua.net/blog.html">
+  <meta property="og:title" content="Insights & Articles | Deep Blue Aqua">
+  <meta property="og:description" content="Technical guides, case studies, and engineering insights into aquaculture, RAS, farm water, and filtration.">
+  <meta property="og:url" content="https://deepblueaqua.net/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://deepblueaqua.net/assets/og-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg">
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +20,7 @@
 <body>
   <header>
     <a href="index.html" class="brand" aria-label="Deep Blue Aqua home">
-      <img src="assets/logo.png" alt="Deep Blue Aqua" class="brand-logo">
+      <img src="assets/logo.webp" alt="Deep Blue Aqua" class="brand-logo">
     </a>
     <div class="mobile-header-actions">
       <a href="tel:+27218562031" class="header-call-btn" aria-label="Call +27 21 856 2031" title="Call +27 21 856 2031">
@@ -25,7 +32,7 @@
     </div>
     <nav>
       <div class="nav-header-row">
-        <img src="assets/logo.png" alt="Deep Blue Aqua" class="nav-header-logo">
+        <img src="assets/logo.webp" alt="Deep Blue Aqua" class="nav-header-logo">
         <button type="button" class="nav-close-btn" aria-label="Close navigation">
           <i class="fa-solid fa-xmark"></i>
         </button>
@@ -48,6 +55,15 @@
                 <span class="dropdown-text">
                   <strong class="dropdown-title">Aquaculture Systems</strong>
                   <span class="dropdown-desc">Turnkey hatcheries, grow-out facilities &amp; R&amp;D</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="agriculture.html" class="dropdown-item">
+                <span class="dropdown-icon" style="background:#e8f7ee;color:#10b981;"><i class="fa-solid fa-wheat-awn"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Agricultural Water Systems</strong>
+                  <span class="dropdown-desc">Borehole &amp; dam treatment, irrigation &amp; farm water</span>
                 </span>
               </a>
             </li>
@@ -114,7 +130,8 @@
         </div>
       </div>
       <a href="index.html#why-choose-us"><span>Why Choose Us</span></a>
-      <a href="index.html#projects"><span>Projects</span></a>
+      <a href="agriculture.html"><span>Agriculture</span></a>
+      <a href="projects.html"><span>Projects</span></a>
       <a class="active" href="blog.html"><span>Insights</span></a>
       <a href="contact.html"><span>Contact</span></a>
       <div class="nav-drawer-actions">
@@ -168,15 +185,31 @@
         <button class="blog-tab-btn" data-filter="holding">Live Holding Systems</button>
         <button class="blog-tab-btn" data-filter="monitoring">Water Monitoring</button>
         <button class="blog-tab-btn" data-filter="pools">Specialist Pools</button>
+        <button class="blog-tab-btn" data-filter="agriculture">Agriculture &amp; Farms</button>
         <button class="blog-tab-btn" data-filter="design">System Design &amp; Planning</button>
       </div>
 
       <!-- Articles Grid -->
       <div class="cards articles" id="blogGrid">
+        <!-- Card: Agricultural Water Systems -->
+        <article class="card article-card" data-category="agriculture" data-article-id="6" style="cursor:pointer;">
+          <div class="card-media">
+            <img src="assets/ruben/IMG_8463.webp" alt="Agricultural borehole and dam water filtration" class="card-img" loading="lazy">
+            <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 7 min read</span>
+          </div>
+          <div class="card-body">
+            <time><i class="fa-regular fa-calendar"></i> 25 Sep 2026 &nbsp;•&nbsp; <span style="color:#10b981;font-weight:600;">Agricultural Water</span></time>
+            <h3>Borehole &amp; Dam Water Treatment: Managing Iron, Turbidity and Biofilm on Farms</h3>
+            <p style="font-size:13px;line-height:1.5;color:#55728f;margin-bottom:12px;">Preventing drip irrigation clogging and pathogen outbreaks: catalytic media filtration, automated Faivre drum screening, solar pumping, and water reuse.</p>
+            <a href="blog-post.html?id=6" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="circle-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
         <!-- Card 1: Featured - What Is a Recirculating Aquaculture System (RAS)? -->
         <article class="card article-card" data-category="ras" data-article-id="featured" style="cursor:pointer;">
           <div class="card-media">
-            <img src="assets/projects/06_Trout_Hatchery_RAS.png" alt="Recirculating aquaculture system filtration" class="card-img" loading="lazy">
+            <img src="assets/projects/06_Trout_Hatchery_RAS.webp" alt="Recirculating aquaculture system filtration" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
           </div>
           <div class="card-body">
@@ -191,7 +224,7 @@
         <!-- Card 2: How Drum Filters Work -->
         <article class="card article-card" data-category="ras" data-article-id="0" style="cursor:pointer;">
           <div class="card-media">
-            <img src="assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.jpg" alt="Drum filter technology in aquaculture" class="card-img" loading="lazy">
+            <img src="assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.webp" alt="Drum filter technology in aquaculture" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 5 min read</span>
           </div>
           <div class="card-body">
@@ -206,7 +239,7 @@
         <!-- Card 3: Water Quality Monitoring -->
         <article class="card article-card" data-category="monitoring" data-article-id="1" style="cursor:pointer;">
           <div class="card-media">
-            <img src="assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.jpg" alt="Water quality monitoring sensors and telemetry" class="card-img" loading="lazy">
+            <img src="assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.webp" alt="Water quality monitoring sensors and telemetry" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 5 min read</span>
           </div>
           <div class="card-body">
@@ -221,7 +254,7 @@
         <!-- Card 4: Live Holding Risk Reduction -->
         <article class="card article-card" data-category="holding" data-article-id="2" style="cursor:pointer;">
           <div class="card-media">
-            <img src="assets/services/02_Live_Holding/0005_West-Coast-rock-lobster.jpg" alt="Live seafood holding tanks" class="card-img" loading="lazy">
+            <img src="assets/services/02_Live_Holding/0005_West-Coast-rock-lobster.webp" alt="Live seafood holding tanks" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
           </div>
           <div class="card-body">
@@ -236,7 +269,7 @@
         <!-- Card 5: Red Tide Mitigation 1.2M L/h -->
         <article class="card article-card" data-category="pools" data-article-id="3" style="cursor:pointer;">
           <div class="card-media">
-            <img src="assets/projects/01_Red_Tide_Mitigation_Filtration_System.png" alt="High capacity red tide filtration system" class="card-img" loading="lazy">
+            <img src="assets/projects/01_Red_Tide_Mitigation_Filtration_System.webp" alt="High capacity red tide filtration system" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 5 min read</span>
           </div>
           <div class="card-body">
@@ -251,7 +284,7 @@
         <!-- Card 6: Natural Pool Filtration -->
         <article class="card article-card" data-category="pools" data-article-id="4" style="cursor:pointer;">
           <div class="card-media">
-            <img src="assets/projects/02_Natural_Pool_01.png" alt="Natural swimming pool in Helderberg" class="card-img" loading="lazy">
+            <img src="assets/projects/02_Natural_Pool_01.webp" alt="Natural swimming pool in Helderberg" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 4 min read</span>
           </div>
           <div class="card-body">
@@ -266,7 +299,7 @@
         <!-- Card 7: CAPEX and OPEX Considerations -->
         <article class="card article-card" data-category="design" data-article-id="5" style="cursor:pointer;">
           <div class="card-media">
-            <img src="assets/services/01_Aquaculture/0012_Abalone-farm.jpg" alt="Commercial aquaculture system planning" class="card-img" loading="lazy">
+            <img src="assets/services/01_Aquaculture/0012_Abalone-farm.webp" alt="Commercial aquaculture system planning" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
           </div>
           <div class="card-body">
@@ -317,15 +350,15 @@
       <div class="footer-grid">
         <div class="footer-col brand-col">
           <a class="footer-brand" href="index.html" aria-label="Deep Blue Aqua">
-            <img src="assets/logo-white.png" alt="Deep Blue Aqua" class="footer-logo">
+            <img src="assets/logo-white.webp" alt="Deep Blue Aqua" class="footer-logo">
           </a>
           <p class="footer-desc">
             South African aquatic engineering and water technology company specialising in the design, manufacture, supply and installation of systems where water quality, reliability and control matter.
           </p>
           <div class="footer-socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com/deepblueaqua" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com/company/deep-blue-aqua" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://youtube.com/@deepblueaqua" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://wa.me/27218562031" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
@@ -339,6 +372,8 @@
             <li><a href="services.html#service-aquarium"><i class="fa-solid fa-angle-right"></i> Commercial Aquarium Systems</a></li>
             <li><a href="services.html#service-monitoring"><i class="fa-solid fa-angle-right"></i> Monitoring &amp; Control Systems</a></li>
             <li><a href="services.html#service-pools"><i class="fa-solid fa-angle-right"></i> Specialist Swimming Pools</a></li>
+            <li><a href="agriculture.html"><i class="fa-solid fa-angle-right"></i> Agricultural Water Systems</a></li>
+            <li><a href="services.html#service-consulting"><i class="fa-solid fa-angle-right"></i> Design, Consulting &amp; Supply</a></li>
           </ul>
         </div>
 
@@ -348,8 +383,8 @@
             <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
             <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Our Company</a></li>
             <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Specialist Solutions</a></li>
-            <li><a href="index.html#why-choose-us"><i class="fa-solid fa-angle-right"></i> Why Choose Us</a></li>
-            <li><a href="index.html#projects"><i class="fa-solid fa-angle-right"></i> Featured Projects</a></li>
+            <li><a href="agriculture.html"><i class="fa-solid fa-angle-right"></i> Agricultural Systems</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Featured Projects</a></li>
             <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Insights &amp; Articles</a></li>
             <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Discuss Your Project</a></li>
           </ul>
@@ -399,11 +434,11 @@
           <span class="tag">Specialist Aquatic Systems</span>
         </div>
         <div class="footer-legal">
-          <a href="contact.html">Privacy Policy</a>
+          <a href="privacy.html">Privacy Policy</a>
           <span class="dot">•</span>
-          <a href="contact.html">Terms & Conditions</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
           <span class="dot">•</span>
-          <a href="contact.html">Quality &amp; Environmental Policy</a>
+          <a href="quality-policy.html">Quality &amp; Environmental Policy</a>
         </div>
         <a href="#" class="back-to-top" aria-label="Back to top">
           <span>Top</span> <i class="fa-solid fa-arrow-up"></i>
@@ -429,7 +464,7 @@
     document.querySelectorAll('[data-crop]').forEach(el => {
       const [x, y, w, h] = el.dataset.crop.split(',').map(Number);
       el.style.aspectRatio = `${w}/${h}`;
-      el.innerHTML = `<img src="assets/reference.png" alt="" draggable="false" style="width:${803/w*100}%;left:${-x/w*100}%;top:${-y/h*100}%">`;
+      el.innerHTML = `<img src="assets/reference.webp" alt="" draggable="false" style="width:${803/w*100}%;left:${-x/w*100}%;top:${-y/h*100}%">`;
     });
 
     // Mobile navigation drawer & backdrop

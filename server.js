@@ -2,8 +2,12 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = parseInt(process.env.PORT || process.argv[2] || '3012', 10);
-const DIST_DIR = path.resolve(__dirname, 'dist');
+const PORT = parseInt(process.env.PORT || process.argv[2] || '3002', 10);
+const distCandidates = [
+  path.resolve(__dirname, 'dist'),
+  path.resolve(__dirname, 'deep-main', 'dist')
+];
+const DIST_DIR = distCandidates.find(d => fs.existsSync(d)) || path.resolve(__dirname, 'dist');
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -22,6 +26,8 @@ const MIME_TYPES = {
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
   '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml; charset=utf-8',
+  '.webm': 'video/webm',
   '.mp4': 'video/mp4',
   '.mp3': 'audio/mpeg'
 };

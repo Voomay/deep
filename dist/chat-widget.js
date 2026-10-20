@@ -71,21 +71,27 @@
   container.className = 'dba-chat-container';
   container.innerHTML = `
     <!-- Teaser Prompt Bubble -->
-    <div class="dba-chat-teaser" id="dbaChatTeaser">
+    <div class="dba-chat-teaser hidden" id="dbaChatTeaser">
       <div class="dba-teaser-avatar">
         <i class="fa-solid fa-droplet"></i>
       </div>
       <div class="dba-teaser-content">
         <strong>Need Aquatic Engineering Advice?</strong>
-        <p>Chat with our technical desk for aquaculture, RAS, and live holding guidance.</p>
+        <p>Explore FAQ answers or <a href="https://wa.me/27218562031?text=Hello%20Deep%20Blue%20Aqua!%20I%20would%20like%20to%20chat%20with%20an%20aquatic%20engineer." target="_blank" rel="noopener" class="dba-teaser-wa-inline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a></p>
       </div>
       <button class="dba-teaser-close" id="dbaTeaserClose" aria-label="Dismiss chat prompt">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
 
+    <!-- Floating WhatsApp Action -->
+    <a href="https://wa.me/27218562031?text=Hello%20Deep%20Blue%20Aqua!%20I%20would%20like%20to%20chat%20with%20an%20aquatic%20engineer." target="_blank" rel="noopener" class="dba-wa-float-btn" id="dbaWaFloatBtn" aria-label="Chat with us via WhatsApp" title="Chat directly via WhatsApp (+27 21 856 2031)">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="dba-wa-float-label">Chat via WhatsApp</span>
+    </a>
+
     <!-- Floating Launcher -->
-    <button class="dba-chat-launcher" id="dbaChatLauncher" aria-label="Open Water Solutions Assistant Chat">
+    <button class="dba-chat-launcher" id="dbaChatLauncher" aria-label="Open Water Solutions Assistant Chat" title="Open FAQ Assistant">
       <div class="dba-launcher-ripple"></div>
       <span class="dba-launcher-icon"><i class="fa-solid fa-comments"></i></span>
       <span class="dba-launcher-close"><i class="fa-solid fa-xmark"></i></span>
@@ -102,11 +108,14 @@
             <span class="dba-status-dot"></span>
           </div>
           <div class="dba-header-title">
-            <h4>Deep Blue Aqua Technical Desk</h4>
-            <span><i class="fa-solid fa-circle" style="font-size:7px;color:#10b981;"></i> Online • Strand, Western Cape</span>
+            <h4>Deep Blue Aqua FAQ Desk</h4>
+            <span><i class="fa-solid fa-circle" style="font-size:7px;color:#10b981;"></i> Online • Automated Assistant</span>
           </div>
         </div>
         <div class="dba-header-controls">
+          <a href="https://wa.me/27218562031?text=Hello%20Deep%20Blue%20Aqua!%20I%20would%20like%20to%20chat%20with%20an%20aquatic%20engineer." target="_blank" rel="noopener" class="dba-header-wa-btn" title="Chat directly via WhatsApp (+27 21 856 2031)">
+            <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+          </a>
           <button class="dba-ctrl-btn" id="dbaSoundBtn" title="Toggle Sound">
             <i class="fa-solid fa-volume-high"></i>
           </button>
@@ -119,6 +128,20 @@
         </div>
       </div>
 
+      <!-- Live WhatsApp Banner under Header -->
+      <div class="dba-chat-wa-banner">
+        <div class="dba-wa-banner-left">
+          <div class="dba-wa-icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="dba-wa-banner-text">
+            <strong>Looking for live chat?</strong>
+            <span>Chat directly with Ruben &amp; the engineering team</span>
+          </div>
+        </div>
+        <a href="https://wa.me/27218562031?text=Hello%20Deep%20Blue%20Aqua!%20I%20would%20like%20to%20chat%20with%20an%20aquatic%20engineer." target="_blank" rel="noopener" class="dba-wa-banner-btn">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+
       <!-- Messages Body -->
       <div class="dba-chat-body" id="dbaChatBody">
         <!-- Messages rendered dynamically -->
@@ -127,13 +150,13 @@
       <!-- Footer & Input -->
       <div class="dba-chat-footer">
         <div class="dba-input-row">
-          <input type="text" class="dba-chat-input" id="dbaChatInput" placeholder="Ask about RAS, live holding, monitoring, or projects..." autocomplete="off">
+          <input type="text" class="dba-chat-input" id="dbaChatInput" placeholder="Ask about RAS, farm water, holding, or projects..." autocomplete="off">
           <button class="dba-send-btn" id="dbaSendBtn" aria-label="Send message">
             <i class="fa-solid fa-paper-plane"></i>
           </button>
         </div>
         <div class="dba-chat-footer-note">
-          <i class="fa-solid fa-shield-halved"></i> Direct connection to Deep Blue Aquatic Systems (Strand, WC)
+          <i class="fa-solid fa-robot"></i> Automated FAQ • <a href="https://wa.me/27218562031?text=Hello%20Deep%20Blue%20Aqua!%20I%20would%20like%20to%20chat%20with%20an%20aquatic%20engineer." target="_blank" rel="noopener" class="dba-footer-wa-link"><i class="fa-brands fa-whatsapp"></i> Chat Live on WhatsApp</a>
         </div>
       </div>
     </div>
@@ -190,7 +213,10 @@
   teaser.addEventListener('click', (e) => {
     if (e.target.closest('#dbaTeaserClose')) {
       teaser.classList.add('hidden');
-      try { sessionStorage.setItem('dba_chat_teaser_dismissed', '1'); } catch (e) {}
+      try {
+        localStorage.setItem('dba_chat_teaser_dismissed', '1');
+        sessionStorage.setItem('dba_chat_teaser_dismissed', '1');
+      } catch (e) {}
       return;
     }
     openChat();
@@ -314,7 +340,7 @@
     chips.forEach(c => {
       const btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'dba-chip';
+      btn.className = `dba-chip ${c.isWa ? 'dba-chip-wa' : ''}`;
       btn.innerHTML = `<i class="${c.icon || 'fa-solid fa-chevron-right'}"></i> <span>${c.label}</span>`;
       btn.onclick = () => {
         // Remove or disable chips in this group to avoid re-clicks
@@ -332,12 +358,15 @@
   function renderWelcome() {
     const welcomeText = `
       <strong>👋 Hello! Welcome to Deep Blue Aquatic Systems.</strong><br><br>
-      We engineer specialised water environments where water quality, reliability and control matter. How can our technical desk assist you today?
+      This interactive guide answers frequently asked questions about our engineering and systems.<br><br>
+      💬 <strong>Need live human help?</strong> Tap below to chat directly with Ruben and our engineering team on WhatsApp.
     `;
     addMessage('bot', welcomeText, true);
 
     const initialChips = [
+      { id: 'whatsapp_desk', label: '💬 Chat with Us via WhatsApp (+27 21 856 2031)', icon: 'fa-brands fa-whatsapp', isWa: true },
       { id: 'quote', label: '📋 Discuss Your Project / Quote', icon: 'fa-solid fa-clipboard-check' },
+      { id: 'agri', label: '🌾 Agricultural & Farm Water Systems', icon: 'fa-solid fa-wheat-awn' },
       { id: 'ras', label: '🐟 Recirculating Aquaculture (RAS)', icon: 'fa-solid fa-arrows-spin' },
       { id: 'holding', label: '🦞 Live Holding (Lobster / Abalone)', icon: 'fa-solid fa-box-archive' },
       { id: 'monitoring', label: '📊 Water Quality & DO Monitoring', icon: 'fa-solid fa-chart-line' },
@@ -346,7 +375,7 @@
     ];
 
     setTimeout(() => {
-      renderChips(initialChips, 'Explore our capabilities or start an enquiry:');
+      renderChips(initialChips, 'Choose an option or start an enquiry:');
     }, 250);
   }
 
@@ -355,6 +384,23 @@
     addMessage('user', chip.label);
 
     switch (chip.id) {
+      case 'whatsapp_desk':
+        const waDirectUrl = "https://wa.me/27218562031?text=" + encodeURIComponent("Hello Deep Blue Aqua! I am enquiring via your website and would like to chat with an aquatic engineer.");
+        window.open(waDirectUrl, '_blank');
+        botReply(`
+          <strong>Connecting you to WhatsApp... 📲</strong><br><br>
+          We've opened a direct WhatsApp chat with our technical desk in Strand (+27 21 856 2031). Ruben and our engineering team will assist you directly.<br><br>
+          If WhatsApp didn't open automatically, please tap the link below:<br><br>
+          <a href="${waDirectUrl}" target="_blank" rel="noopener" class="dba-inline-wa-btn">
+            <i class="fa-brands fa-whatsapp" style="font-size:16px;"></i> Open WhatsApp Chat (+27 21 856 2031)
+          </a>
+        `, true, 300, () => {
+          renderChips([
+            { id: 'quote', label: '📋 Discuss Your Project / Quote', icon: 'fa-solid fa-clipboard-check' },
+            { id: 'call', label: '📞 Speak to Office: +27 21 856 2031', icon: 'fa-solid fa-phone' }
+          ], 'You can also browse our FAQ:');
+        });
+        break;
       case 'quote':
         state.step = 'ask_service';
         botReply(`
@@ -363,6 +409,30 @@
         `, true, 400, () => {
           renderServiceSelector();
         });
+        break;
+
+      case 'agri':
+        botReply(`
+          <strong>Agricultural & Farm Water Systems 🌾</strong><br><br>
+          Deep Blue Aqua engineers comprehensive farm water infrastructure across the Western Cape and beyond:<br>
+          • <strong>Borehole & Dam Treatment:</strong> Iron/manganese precipitation, multi-media & disc filtration, turbidity removal.<br>
+          • <strong>Irrigation Protection:</strong> Industrial UV & ozone disinfection preventing nozzle biofilm and crop pathogens.<br>
+          • <strong>Livestock Drinking Water:</strong> Automated, hygienic watering systems ensuring animal productivity.<br>
+          • <strong>Solar Pump Stations:</strong> Mountain dams, reticulation pipelines, and telemetry.<br>
+          • <strong>Commercial Aquaponics & Dam Aquaculture:</strong> Integrated fish and crop life support.<br>
+          • <strong>Agro-Processing & Winery Effluent:</strong> Treatment, filtration, and water reuse.<br><br>
+          Would you like to discuss a farm water solution?
+        `, true, 450, () => {
+          renderChips([
+            { id: 'quote_agri', label: 'Request Farm Water Quotation', icon: 'fa-solid fa-wheat-awn' },
+            { id: 'call', label: 'Speak to Ruben van der Merwe', icon: 'fa-solid fa-phone' }
+          ], 'Next step:');
+        });
+        break;
+
+      case 'quote_agri':
+        state.leadData.service = 'Agricultural Water Systems';
+        startLocationStep();
         break;
 
       case 'ras':
@@ -456,6 +526,7 @@
   // Step 1: Service Selection
   function renderServiceSelector() {
     const services = [
+      { id: 's_agri', label: '🌾 Agricultural Water Systems & Farm Treatment', service: 'Agricultural Water Systems' },
       { id: 's_aqua', label: '🐟 Complete Aquaculture / Hatchery Facility', service: 'Aquaculture Systems & Hatcheries' },
       { id: 's_ras', label: '🔄 Recirculating Aquaculture Systems (RAS)', service: 'Recirculating Aquaculture Systems (RAS)' },
       { id: 's_holding', label: '🦞 Live Holding (Lobster / Abalone / Shellfish)', service: 'Live Holding Systems' },
@@ -788,13 +859,15 @@
     if (lower.includes('contact') || lower.includes('phone') || lower.includes('email') || lower.includes('call') || lower.includes('whatsapp') || lower.includes('director')) {
       botReply(`
         <strong>Contact Deep Blue Aquatic Systems 📞</strong><br><br>
+        • <strong>WhatsApp Direct:</strong> <a href="https://wa.me/27218562031?text=Hello%20Deep%20Blue%20Aqua!%20I%20would%20like%20to%20chat%20with%20an%20aquatic%20engineer." target="_blank" rel="noopener" style="color:#0f8b44;font-weight:bold;"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp (+27 21 856 2031)</a><br>
         • <strong>Telephone:</strong> <a href="tel:+27218562031" style="color:#009bd0;font-weight:bold;">+27 21 856 2031</a><br>
         • <strong>Email:</strong> <a href="mailto:info@deepblueaqua.net" style="color:#009bd0;font-weight:bold;">info@deepblueaqua.net</a><br>
         • <strong>Address:</strong> 185 Mills Street, Gants Plaza, Strand 7140, Western Cape<br>
         • <strong>Directors:</strong> Grant Brooker (Operations), Ruben van der Merwe (Technical), Brynn Simpson (Financial)<br><br>
-        Would you like to speak to an engineer directly?
+        How would you like to connect?
       `, true, 350, () => {
         renderChips([
+          { id: 'whatsapp_desk', label: '💬 Chat with Us via WhatsApp', icon: 'fa-brands fa-whatsapp', isWa: true },
           { id: 'call', label: 'Request Direct Callback', icon: 'fa-solid fa-phone-flip' },
           { id: 'quote', label: 'Discuss a Project', icon: 'fa-solid fa-clipboard-list' }
         ]);
@@ -802,13 +875,33 @@
       return;
     }
 
+    if (lower.includes('agri') || lower.includes('farm') || lower.includes('borehole') || lower.includes('dam') || lower.includes('irrigation') || lower.includes('iron') || lower.includes('manganese') || lower.includes('aquaponic') || lower.includes('livestock') || lower.includes('effluent') || lower.includes('winery')) {
+      botReply(`
+        <strong>Agricultural Water Systems & Farm Treatment 🌾</strong><br><br>
+        We design, build, and support robust water systems for agricultural enterprises, vineyards, packhouses, and livestock farms across the Western Cape and South Africa:<br><br>
+        • <strong>Borehole Iron & Turbidity Removal:</strong> Aeration skids, catalytic media, and automated backwash filters.<br>
+        • <strong>Irrigation Filtration & Sanitisation:</strong> Drum filters, sand media, and inline UV/ozone systems to stop dripper clogging and pathogens.<br>
+        • <strong>Solar Pump Stations & Reticulation:</strong> Mountain dams, high-head transfer, and remote telemetry.<br>
+        • <strong>Livestock Watering:</strong> Automated, hygienic watering systems ensuring optimal animal welfare.<br>
+        • <strong>Aquaponics & Farm Fish Ponds:</strong> Commercial closed-loop biological production.<br><br>
+        Would you like to request an agricultural quote or speak to our technical team?
+      `, true, 400, () => {
+        renderChips([
+          { id: 'quote_agri', label: 'Request Farm Water Quote', icon: 'fa-solid fa-wheat-awn' },
+          { id: 'call', label: 'Call +27 21 856 2031', icon: 'fa-solid fa-phone' }
+        ]);
+      });
+      return;
+    }
+
     // Default friendly response
     botReply(`
-      Thank you for your message! Deep Blue Aquatic Systems engineers specialized water environments across <strong>aquaculture, RAS, live holding, water monitoring, and specialist swimming pools</strong>.<br><br>
+      Thank you for your message! Deep Blue Aquatic Systems engineers specialized water environments across <strong>aquaculture, agricultural water systems, RAS, live holding, water monitoring, and specialist swimming pools</strong>.<br><br>
       How would you like to proceed?
     `, true, 400, () => {
       renderChips([
         { id: 'quote', label: '📋 Discuss Your Project', icon: 'fa-solid fa-clipboard-check' },
+        { id: 'agri', label: '🌾 Agricultural Water Systems', icon: 'fa-solid fa-wheat-awn' },
         { id: 'call', label: '📞 Speak With Our Technical Team', icon: 'fa-solid fa-phone' },
         { id: 'ras', label: '🐟 Recirculating Aquaculture (RAS)', icon: 'fa-solid fa-arrows-spin' }
       ]);
@@ -839,15 +932,15 @@
     }
   }
 
-  // Teaser prompt delayed display (Desktop only, and only if not dismissed)
+  // Teaser prompt delayed display (Desktop only, 10s delay, and only if not dismissed)
   setTimeout(() => {
     try {
-      if (sessionStorage.getItem('dba_chat_teaser_dismissed')) return;
+      if (localStorage.getItem('dba_chat_teaser_dismissed') || sessionStorage.getItem('dba_chat_teaser_dismissed')) return;
     } catch (e) {}
-    if (window.innerWidth <= 640) return; // Keep mobile screens completely clean and unobstructed
+    if (window.innerWidth <= 768) return; // Keep mobile screens completely clean and unobstructed
     if (!container.classList.contains('is-open')) {
       teaser.classList.remove('hidden');
     }
-  }, 2400);
+  }, 10000);
 
 })();

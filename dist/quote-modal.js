@@ -46,9 +46,10 @@
                 <div class="quote-form-group">
                   <label for="qm-service">Specialist Solution Needed *</label>
                   <select id="qm-service" name="service" required>
-                    <option value="">Select an aquatic solution...</option>
+                    <option value="">Select an engineered solution...</option>
                     <option value="Aquaculture Systems & Hatcheries">Aquaculture Systems &amp; Hatcheries</option>
                     <option value="Recirculating Aquaculture Systems (RAS)">Recirculating Aquaculture Systems (RAS)</option>
+                    <option value="Agricultural Water Systems & Farm Treatment">Agricultural Water Systems &amp; Farm Treatment</option>
                     <option value="Live Holding Systems (Lobster/Abalone/Shellfish)">Live Holding Systems (Lobster, Abalone, Shellfish)</option>
                     <option value="Commercial Aquarium Systems">Commercial &amp; Specialist Aquarium Systems</option>
                     <option value="Water Quality Monitoring & Control">Water Quality Monitoring &amp; Automation</option>
@@ -61,6 +62,9 @@
                   <label for="qm-scale">Project Scale / Application</label>
                   <select id="qm-scale" name="scale">
                     <option value="Commercial RAS Production Facility">Commercial RAS Production Facility</option>
+                    <option value="Agricultural / Borehole & Dam Treatment">Agricultural / Borehole &amp; Dam Treatment</option>
+                    <option value="Irrigation Filtration & Disinfection">Irrigation Filtration &amp; Disinfection</option>
+                    <option value="Farm Aquaponics & Dam Aquaculture">Farm Aquaponics &amp; Dam Aquaculture</option>
                     <option value="Hatchery & Nursery Facility">Hatchery &amp; Nursery Facility</option>
                     <option value="Live Seafood Holding & Purging">Live Seafood Holding &amp; Purging</option>
                     <option value="Commercial / Public Aquarium Exhibit">Commercial / Public Aquarium Exhibit</option>
