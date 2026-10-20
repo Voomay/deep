@@ -84,12 +84,6 @@
       </button>
     </div>
 
-    <!-- Floating WhatsApp Action -->
-    <a href="https://wa.me/27218562031?text=Hello%20Deep%20Blue%20Aqua!%20I%20would%20like%20to%20chat%20with%20an%20aquatic%20engineer." target="_blank" rel="noopener" class="dba-wa-float-btn" id="dbaWaFloatBtn" aria-label="Chat with us via WhatsApp" title="Chat directly via WhatsApp (+27 21 856 2031)">
-      <i class="fa-brands fa-whatsapp"></i>
-      <span class="dba-wa-float-label">Chat via WhatsApp</span>
-    </a>
-
     <!-- Floating Launcher -->
     <button class="dba-chat-launcher" id="dbaChatLauncher" aria-label="Open Water Solutions Assistant Chat" title="Open FAQ Assistant">
       <div class="dba-launcher-ripple"></div>
@@ -113,14 +107,8 @@
           </div>
         </div>
         <div class="dba-header-controls">
-          <a href="https://wa.me/27218562031?text=Hello%20Deep%20Blue%20Aqua!%20I%20would%20like%20to%20chat%20with%20an%20aquatic%20engineer." target="_blank" rel="noopener" class="dba-header-wa-btn" title="Chat directly via WhatsApp (+27 21 856 2031)">
-            <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
-          </a>
           <button class="dba-ctrl-btn" id="dbaSoundBtn" title="Toggle Sound">
             <i class="fa-solid fa-volume-high"></i>
-          </button>
-          <button class="dba-ctrl-btn" id="dbaResetBtn" title="Restart Conversation">
-            <i class="fa-solid fa-rotate-right"></i>
           </button>
           <button class="dba-ctrl-btn" id="dbaCloseBtn" title="Close Chat">
             <i class="fa-solid fa-minus"></i>
@@ -232,13 +220,15 @@
   });
 
   // Reset conversation
-  resetBtn.addEventListener('click', () => {
-    state.step = 'idle';
-    state.leadData = { service: '', location: '', contactName: '', contactPhone: '', refId: '' };
-    try { sessionStorage.removeItem('dba_chat_lead'); } catch (e) {}
-    chatBody.innerHTML = '';
-    renderWelcome();
-  });
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      state.step = 'idle';
+      state.leadData = { service: '', location: '', contactName: '', contactPhone: '', refId: '' };
+      try { sessionStorage.removeItem('dba_chat_lead'); } catch (e) {}
+      chatBody.innerHTML = '';
+      renderWelcome();
+    });
+  }
 
   // Keyboard escape
   document.addEventListener('keydown', (e) => {
