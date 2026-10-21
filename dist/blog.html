@@ -20,10 +20,10 @@
 <body>
   <header>
     <a href="index.html" class="brand" aria-label="Deep Blue Aqua home">
-      <img src="assets/logo.webp" alt="Deep Blue Aqua" class="brand-logo">
+      <img src="assets/logo.webp" onerror="this.onerror=null;this.src='assets/logo.png'" alt="Deep Blue Aqua" class="brand-logo">
     </a>
     <div class="mobile-header-actions">
-      <a href="tel:+27218562031" class="header-call-btn" aria-label="Call +27 21 856 2031" title="Call +27 21 856 2031">
+      <a href="tel:+27218562031" class="header-call-btn" aria-label="Call 021 856 2031" title="Call 021 856 2031">
         <i class="fa-solid fa-phone"></i>
       </a>
       <button class="menu" aria-label="Open menu" aria-expanded="false">
@@ -32,7 +32,7 @@
     </div>
     <nav>
       <div class="nav-header-row">
-        <img src="assets/logo.webp" alt="Deep Blue Aqua" class="nav-header-logo">
+        <img src="assets/logo.webp" onerror="this.onerror=null;this.src='assets/logo.png'" alt="Deep Blue Aqua" class="nav-header-logo">
         <button type="button" class="nav-close-btn" aria-label="Close navigation">
           <i class="fa-solid fa-xmark"></i>
         </button>
@@ -42,7 +42,7 @@
       <div class="nav-has-dropdown">
         <div class="nav-item-wrap">
           <a class="nav-link-main" href="services.html"><span>Solutions</span> <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
-          <button type="button" class="mobile-dropdown-toggle" aria-label="Toggle Solutions submenu">
+          <button type="button" class="mobile-dropdown-toggle" aria-label="Toggle Services submenu">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
         </div>
@@ -51,19 +51,10 @@
           <ul class="dropdown-list">
             <li>
               <a href="services.html#service-aquaculture" class="dropdown-item">
-                <span class="dropdown-icon"><i class="fa-solid fa-fish-fins"></i></span>
+                <span class="dropdown-icon"><i class="fa-solid fa-fish"></i></span>
                 <span class="dropdown-text">
                   <strong class="dropdown-title">Aquaculture Systems</strong>
-                  <span class="dropdown-desc">Turnkey hatcheries, grow-out facilities &amp; R&amp;D</span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="agriculture.html" class="dropdown-item">
-                <span class="dropdown-icon" style="background:#e8f7ee;color:#10b981;"><i class="fa-solid fa-wheat-awn"></i></span>
-                <span class="dropdown-text">
-                  <strong class="dropdown-title">Agricultural Water Systems</strong>
-                  <span class="dropdown-desc">Borehole &amp; dam treatment, irrigation &amp; farm water</span>
+                  <span class="dropdown-desc">Turnkey freshwater & marine hatcheries and grow-out</span>
                 </span>
               </a>
             </li>
@@ -72,16 +63,25 @@
                 <span class="dropdown-icon"><i class="fa-solid fa-arrows-spin"></i></span>
                 <span class="dropdown-text">
                   <strong class="dropdown-title">Recirculating Systems (RAS)</strong>
-                  <span class="dropdown-desc">Drum filters, biofiltration, protein skimmers &amp; O₂</span>
+                  <span class="dropdown-desc">Biofiltration, drum filters & foam fractionation</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="agriculture.html" class="dropdown-item">
+                <span class="dropdown-icon"><i class="fa-solid fa-wheat-awn"></i></span>
+                <span class="dropdown-text">
+                  <strong class="dropdown-title">Agricultural Water Systems</strong>
+                  <span class="dropdown-desc">Borehole, dam, irrigation & livestock water</span>
                 </span>
               </a>
             </li>
             <li>
               <a href="services.html#service-live-holding" class="dropdown-item">
-                <span class="dropdown-icon"><i class="fa-solid fa-box-archive"></i></span>
+                <span class="dropdown-icon"><i class="fa-solid fa-shrimp"></i></span>
                 <span class="dropdown-text">
                   <strong class="dropdown-title">Live Holding Systems</strong>
-                  <span class="dropdown-desc">Lobster, abalone &amp; shellfish purging infrastructure</span>
+                  <span class="dropdown-desc">Lobster, abalone & pre-export holding facilities</span>
                 </span>
               </a>
             </li>
@@ -90,7 +90,7 @@
                 <span class="dropdown-icon"><i class="fa-solid fa-water"></i></span>
                 <span class="dropdown-text">
                   <strong class="dropdown-title">Commercial Aquarium Systems</strong>
-                  <span class="dropdown-desc">Public exhibits, research facilities &amp; live seafood displays</span>
+                  <span class="dropdown-desc">Life-support systems, public exhibits & restaurant displays</span>
                 </span>
               </a>
             </li>
@@ -98,8 +98,8 @@
               <a href="services.html#service-monitoring" class="dropdown-item">
                 <span class="dropdown-icon"><i class="fa-solid fa-chart-line"></i></span>
                 <span class="dropdown-text">
-                  <strong class="dropdown-title">Monitoring &amp; Control</strong>
-                  <span class="dropdown-desc">Dissolved oxygen, sensors, data logging &amp; alarms</span>
+                  <strong class="dropdown-title">Monitoring & Control Systems</strong>
+                  <span class="dropdown-desc">Dissolved oxygen, pH, temperature & automated alarms</span>
                 </span>
               </a>
             </li>
@@ -108,7 +108,7 @@
                 <span class="dropdown-icon"><i class="fa-solid fa-person-swimming"></i></span>
                 <span class="dropdown-text">
                   <strong class="dropdown-title">Specialist Swimming Pools</strong>
-                  <span class="dropdown-desc">Commercial 50m pools, school pools &amp; natural eco-pools</span>
+                  <span class="dropdown-desc">School, 50m commercial, natural & eco-pools</span>
                 </span>
               </a>
             </li>
@@ -116,35 +116,34 @@
               <a href="services.html#service-consulting" class="dropdown-item">
                 <span class="dropdown-icon"><i class="fa-solid fa-compass-drafting"></i></span>
                 <span class="dropdown-text">
-                  <strong class="dropdown-title">Design, Consulting &amp; Supply</strong>
-                  <span class="dropdown-desc">CAD modelling, feasibility &amp; specialist equipment</span>
+                  <strong class="dropdown-title">Design, Consulting & Supply</strong>
+                  <span class="dropdown-desc">Production modelling, GRP/HDPE tanks & equipment</span>
                 </span>
               </a>
             </li>
           </ul>
           <div class="dropdown-footer">
             <a href="services.html">
-              <span>View All Solutions</span> <i class="fa-solid fa-arrow-right"></i>
+              <span>Explore All Solutions</span> <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
       </div>
-      <a href="index.html#why-choose-us"><span>Why Choose Us</span></a>
       <a href="agriculture.html"><span>Agriculture</span></a>
       <a href="projects.html"><span>Projects</span></a>
       <a class="active" href="blog.html"><span>Insights</span></a>
-      <a href="contact.html"><span>Contact</span></a>
+      <a href="contact.html"><span>Contact Us</span></a>
       <div class="nav-drawer-actions">
         <a class="button glow" href="contact.html" data-quote-trigger>Discuss Your Project <i class="fa-solid fa-arrow-right"></i></a>
-        <a class="nav-contact-pill" href="tel:+27218562031"><i class="fa-solid fa-phone"></i> +27 21 856 2031</a>
-        <a class="nav-contact-pill" href="https://wa.me/27218562031" target="_blank" rel="noopener" style="color:#0f8b44;background:#e8f9ef;border-color:#b9eaca;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Technical Desk</a>
+        <a class="nav-contact-pill" href="tel:+27218562031"><i class="fa-solid fa-phone"></i> 021 856 2031</a>
+        <a class="nav-contact-pill" href="https://wa.me/27218562031" target="_blank" rel="noopener" style="color:#0f8b44;background:#e8f9ef;border-color:#b9eaca;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
       </div>
     </nav>
     <a class="phone" href="tel:+27218562031">
-      <i class="fa-solid fa-phone"></i>&nbsp; +27 21 856 2031
+      <i class="fa-solid fa-phone"></i>&nbsp; 021 856 2031
     </a>
     <a class="button dark" href="contact.html" data-quote-trigger>
-      Discuss Your Project <i class="fa-solid fa-arrow-right"></i>
+      Discuss Project <i class="fa-solid fa-arrow-right"></i>
     </a>
   </header>
 
@@ -200,7 +199,7 @@
           <div class="card-body">
             <time><i class="fa-regular fa-calendar"></i> 25 Sep 2026 &nbsp;•&nbsp; <span style="color:#10b981;font-weight:600;">Agricultural Water</span></time>
             <h3>Borehole &amp; Dam Water Treatment: Managing Iron, Turbidity and Biofilm on Farms</h3>
-            <p style="font-size:13px;line-height:1.5;color:#55728f;margin-bottom:12px;">Preventing drip irrigation clogging and pathogen outbreaks: catalytic media filtration, automated Faivre drum screening, solar pumping, and water reuse.</p>
+            <p style="font-size:13px;line-height:1.5;color:#55728f;margin-bottom:12px;">Preventing drip irrigation clogging and pathogen outbreaks: catalytic media filtration, mechanical suspended solids removal, solar pumping, and water reuse.</p>
             <a href="blog-post.html?id=6" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
             <span class="circle-arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
@@ -284,7 +283,7 @@
         <!-- Card 6: Natural Pool Filtration -->
         <article class="card article-card" data-category="pools" data-article-id="4" style="cursor:pointer;">
           <div class="card-media">
-            <img src="assets/projects/02_Natural_Pool_01.webp" alt="Natural swimming pool in Helderberg" class="card-img" loading="lazy">
+            <img src="assets/projects/02_Natural_Pool_01.webp" alt="Natural swimming pool in Western Cape" class="card-img" loading="lazy">
             <span class="media-tag article-time"><i class="fa-regular fa-clock"></i> 4 min read</span>
           </div>
           <div class="card-body">
@@ -545,158 +544,143 @@
 
     // In-Depth Engineering Article Database
     const articleDetails = {
-      featured: {
-        title: "What Is a Recirculating Aquaculture System (RAS)?",
-        category: "Aquaculture & RAS",
-        date: "18 Sep 2026",
-        readTime: "6 min read",
-        img: "assets/projects/06_Trout_Hatchery_RAS.png",
-        content: `
-          <p>Recirculating Aquaculture Systems (RAS) represent a transformative leap forward in modern fish and shellfish production. Unlike conventional flow-through facilities that continuously draw in and discharge vast volumes of untreated water, RAS treats and recycles up to 99% of total system volume within a closed or semi-closed culture loop.</p>
-          <h3>Greater Control Over the Culture Environment</h3>
-          <p>At the core of Deep Blue Aqua's RAS engineering philosophy is absolute environmental stability. Aquatic organisms divert energy toward somatic growth rather than physiological stress when water temperature, dissolved oxygen, and metabolic waste parameters remain strictly regulated.</p>
-          <h3>The Multi-Barrier RAS Treatment Train</h3>
-          <p>Every commercial RAS designed by Deep Blue Aqua incorporates a synchronized succession of physical, biological, and chemical treatment stages:</p>
-          <p><strong>1. Mechanical Drum Filtration:</strong> Micro-screen rotary drum filters intercept solid fecal matter and uneaten feed pellets down to 40–60 microns before organic breakdown can occur.</p>
-          <p><strong>2. Moving-Bed Biofiltration (MBBR):</strong> Aerobic nitrifying bacteria colonizing buoyant bio-media convert toxic total ammonia nitrogen (TAN) first into nitrite (NO₂⁻), then into less harmful nitrate (NO₃⁻).</p>
-          <p><strong>3. Foam Fractionation (Protein Skimming):</strong> Fine bubbles strip dissolved organic carbon (DOC), microscopic proteins, and fine colloids from the water column, preventing biological oxygen demand (BOD) spikes.</p>
-          <p><strong>4. Oxygen Injection & Gas Management:</strong> Pure gaseous oxygen is dissolved into the culture stream via high-efficiency oxygen cones, maintaining DO levels above 90% saturation regardless of stocking density.</p>
-          <p><strong>5. Thermal Control & Disinfection:</strong> High-capacity heat pump heat exchangers maintain precise thermal profiles, while inline ultraviolet (UV) or ozone oxidation eliminates opportunistic bacterial pathogens.</p>
-        `,
-        takeaways: [
-          "RAS reduces freshwater and marine volume consumption by more than 95% compared to flow-through aquaculture.",
-          "Mechanical solids removal within 15 minutes of excretion reduces biological biofilter loading by over 40%.",
-          "Automated dissolved oxygen and temperature regulation maximizes feed conversion ratios (FCR).",
-          "Closed RAS infrastructure provides unmatched biosecurity against oceanic pathogens, red tides, and agricultural runoff."
-        ]
+      "0": {
+            "id": "0",
+            "title": "How Drum Filters Work in Aquaculture: The First Line of Physical Defense",
+            "category": "ras",
+            "categoryName": "Aquaculture & RAS",
+            "date": "14 Sep 2026",
+            "readTime": "8 min read",
+            "img": "assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.webp",
+            "content": "\n      <p>In modern intensive aquaculture, hatcheries, and live seafood holding infrastructure, mechanical solids separation is the single most decisive factor determining system stability. If solid fecal pellets and uneaten feed remain suspended in the culture water, hydraulic shear forces from pumps and pipe elbows pulverize them into microscopic colloidal fragments within minutes. These fine organics rapidly dissolve, drastically spiking biological oxygen demand (BOD) and total ammonia nitrogen (TAN).</p>\n\n      <h2>The Principle of the Rotary Drum Micro-Screen</h2>\n      <p>Micro-screen rotary drum filters are specifically engineered to extract intact solid wastes from high-volume water flows under gravity with virtually zero hydraulic head loss. The system consists of a precision stainless steel (AISI 316L or marine-grade 304) rotating cylinder wrapped in ultra-fine woven stainless steel or polyester filter mesh (typically 40 µm, 60 µm, or 80 µm pore size depending on species and feed diameter).</p>\n\n      <p>Raw effluent water from culture tanks enters through the open axial inlet of the drum and flows outward through the submerged screen panels under gravity. Particulate matter, fecal ribbons, and uneaten pellets larger than the screen aperture cannot pass through, remaining trapped on the inner cylindrical circumference of the rotating mesh.</p>\n\n      <h2>The Automated On-Demand Backwash Cycle</h2>\n      <p>Unlike static sand filters that require continuous manual backwashing or high-pressure pumps that cause shear, a drum filter operates entirely on demand through intelligent differential pressure sensing:</p>\n      <ul>\n        <li><strong>Solids Accumulation:</strong> As trapped organic solids build up on the inner screen face, the effective filtration area decreases, creating hydraulic resistance.</li>\n        <li><strong>Head Differential Detection:</strong> The water level inside the drum rises relative to the clean water collection chamber outside. An optical level probe or differential pressure transducer detects this precise millimetre-level differential.</li>\n        <li><strong>Automated Actuation:</strong> The PLC controller instantly engages the heavy-duty drum drive motor (turning the cylinder at 3 to 6 RPM) and activates the high-pressure multi-stage backwash pump (operating at 6 to 9 bar).</li>\n        <li><strong>Targeted Fan Jet Discharge:</strong> External high-velocity flat-fan spray nozzles blast clean water through the top of the rotating screen from the outside inward. The pressurized spray dislodges the trapped solids cake into an internal stainless steel sludge hopper.</li>\n        <li><strong>Gravity Drain & Re-set:</strong> The concentrated sludge stream discharges out of the facility via gravity to a solids drying bed or compost dewatering unit. As water levels normalize, the backwash cycle shuts down automatically until head loss rises again.</li>\n      </ul>\n\n      <h2>Why Drum Filters Are Mandatory Before Biofiltration</h2>\n      <p>Autotrophic nitrifying bacteria (<em>Nitrosomonas</em> and <em>Nitrobacter</em>) are slow-growing organisms with long doubling times (12 to 24 hours). Heterotrophic bacteria, which consume dissolved and colloidal organic carbon, reproduce rapidly in as little as 20 to 30 minutes. If organic solids pass into the moving-bed biofilter (MBBR), heterotrophic bacteria rapidly overgrow the bio-media surface, smothering the autotrophic biofilm and causing an immediate collapse in ammonia removal capacity.</p>\n\n      <p>By extracting 70% to 85% of total suspended solids (TSS) at the primary stage, drum filters protect biofilter efficiency, drastically reduce oxygen consumption in filter sumps, and ensure water clarity remains crystal clear for visual feeding inspection.</p>\n\n      <h2>Material Selection: Corrosion Resistance in Marine Environments</h2>\n      <p>Freshwater and hyper-saline marine aquaculture impose vastly different engineering demands. Deep Blue Aqua manufactures drum filter enclosures and internal wet components utilizing 316L stainless steel, titanium hardware, and ultra-high-molecular-weight polyethylene (UHMW-PE) bearing assemblies, guaranteeing decades of non-corrosive duty in aggressive ocean seawater, brine holding facilities, and abalone farms.</p>\n    ",
+            "takeaways": [
+                  "Drum filters provide non-shearing mechanical solid removal down to 40-60 microns before organic decay occurs.",
+                  "Automated differential pressure switching ensures backwashing operates only when needed, minimizing wastewater loss to <1-2%.",
+                  "Removing solid feces at the primary intake prevents heterotrophic overgrowth on autotrophic nitrifying bio-media.",
+                  "Marine-grade 316L stainless steel and UHMW-PE components eliminate corrosion in harsh coastal seawater installations.",
+                  "Continuous gravity separation eliminates the massive electrical head loss associated with pressurized sand vessels."
+            ]
       },
-      0: {
-        title: "How Drum Filters Work in Aquaculture",
-        category: "Aquaculture & RAS",
-        date: "14 Sep 2026",
-        readTime: "5 min read",
-        img: "assets/services/01_Aquaculture/0009_Fish-farm-pipe-installation.jpg",
-        content: `
-          <p>In any recirculating or live-holding facility, mechanical solids removal is the critical first line of defense. If particulate fish wastes and uneaten feed remain suspended in the water column, turbulence and pumping rapidly break them down into microscopic colloidal particles and dissolved ammonia.</p>
-          <h3>Operating Principle of the Rotary Drum Screen</h3>
-          <p>Raw water enters the inside of a slowly rotating perforated cylinder lined with precision polyester or 316 stainless steel filter cloth. Water flows outward under gravity through the screen mesh, while suspended particles larger than the screen rating (typically 40 to 60 microns) are trapped on the inner mesh surface.</p>
-          <h3>Automated Self-Cleaning Backwash Cycles</h3>
-          <p>As solids accumulate on the inner screen face, the water level differential between the drum interior and exterior tank increases. High-precision level transducers detect this head-loss threshold, instantly initiating the drum drive motor and activating high-pressure spray nozzles mounted above the drum. A pressurized fan spray dislodges trapped cakes into an internal stainless collection trough for discharge.</p>
-          <h3>Why Rapid Solids Removal Protects Biofilters</h3>
-          <p>By capturing feces before physical degradation and bacterial mineralization occur, drum filters prevent organic carbon from overwhelming the autotrophic nitrifying bacteria in the downstream moving-bed biofilters (MBBR), preserving nitrification capacity and keeping water clarity sparkling.</p>
-        `,
-        takeaways: [
-          "Interception of intact fecal pellets prevents rapid dissolution into toxic ammonia and fine organic colloids.",
-          "Differential pressure backwashing operates automatically on demand, using under 1.5% of total circulation flow.",
-          "Stainless steel 316L and engineering polymer construction ensure zero corrosion across freshwater and hyper-saline marine duties."
-        ]
+      "1": {
+            "id": "1",
+            "title": "Why Water Quality Monitoring Matters in Aquaculture: Real-Time Telemetry & Risk Mitigation",
+            "category": "monitoring",
+            "categoryName": "Water Quality Monitoring",
+            "date": "08 Sep 2026",
+            "readTime": "8 min read",
+            "img": "assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.webp",
+            "content": "\n      <p>In high-density aquaculture, commercial hatcheries, and live seafood holding systems, minutes make the difference between biological security and catastrophic stock mortality. With biomass densities frequently exceeding 50 to 80 kilograms of live animals per cubic metre of water, aquatic organisms exist within a finely balanced life-support envelope. A single unspotted pump trip, aeration blower failure, or rapid temperature shift can deplete available dissolved oxygen within 20 to 40 minutes.</p>\n\n      <h2>The Life-Support Triangle: Dissolved Oxygen, Temperature & pH</h2>\n      <p>While aquaculture water chemistry involves dozens of interacting chemical parameters, three fundamental variables demand continuous, uninterrupted real-time telemetry:</p>\n\n      <h3>1. Dissolved Oxygen (DO) - The Ultimate Limiting Factor</h3>\n      <p>Fish and crustaceans consume dissolved oxygen continuously while excreting carbon dioxide and ammonia. When dissolved oxygen drops below critical species thresholds (typically <5.0 mg/L for salmonids, <4.0 mg/L for warm-water finfish, <6.0 mg/L for abalone):</p>\n      <ul>\n        <li>Feed ingestion ceases immediately, resulting in lost production days and feed wastage.</li>\n        <li>Metabolic acidosis and cellular hypoxia set in, triggering severe stress hormones.</li>\n        <li>Prolonged sub-lethal hypoxia compromises the animal mucosal immune barrier, leaving the population vulnerable to opportunistic bacterial pathogens such as <em>Aeromonas</em> and <em>Vibrio</em>.</li>\n      </ul>\n\n      <h3>2. Temperature & Dissolved Gas Solubility</h3>\n      <p>Water temperature governs the metabolic rate of poikilothermic aquatic species—every 10°C increase roughly doubles biological metabolic demand (Q₁₀ rule). Concurrently, Henry’s Law dictates that warmer water holds significantly less dissolved oxygen at saturation. High-accuracy industrial RTD temperature transmitters provide continuous input to automated climate control algorithms, modulating heat pumps and chillers with 0.1°C precision.</p>\n\n      <h3>3. pH and the Ammonia-Ammonium Ionization Equilibrium</h3>\n      <p>Total Ammonia Nitrogen (TAN) exists in water in two chemical forms in dynamic equilibrium: unionized toxic ammonia (NH₃) and ionized non-toxic ammonium (NH₄⁺). The ratio between these forms is dictated almost entirely by water pH and temperature. At pH 7.0, less than 1% of TAN is in the toxic NH₃ form; at pH 8.2, toxic NH₃ surges to nearly 10% of total ammonia. Continuous pH monitoring allows facility managers to detect biofilter acid accumulation and maintain safe ionization chemistry.</p>\n\n      <h2>Optical Luminescence vs. Traditional Galvanic Sensors</h2>\n      <p>Traditional galvanic and polarographic DO probes rely on fragile permeable membranes and consumable liquid electrolyte. In high-organic aquaculture environments, bacterial biofilms rapidly foul the membrane surface, leading to severe sensor drift and requiring constant weekly re-calibration and maintenance.</p>\n\n      <p>Deep Blue Aqua deploys next-generation optical luminescence DO instrumentation (including industry-benchmark OxyGuard and Campbell Scientific sensors). Optical sensing measures the phase shift of reflected red light emitted by an oxygen-sensitive ruthenium fluorophore cap when excited by blue LEDs. Optical sensors feature no electrolyte, consume zero oxygen during measurement, are immune to flow velocity variations, and maintain rock-solid calibration over months of continuous submersion in turbid fish culture water.</p>\n\n      <h2>Integrated PLC Switchgear & Automated Emergency Fail-Safes</h2>\n      <p>Information without automated reaction is useless in a crisis. Deep Blue Aqua designs industrial PLC (Programmable Logic Controller) telemetry panels that translate sensor inputs into instantaneous protective action:</p>\n      <ul>\n        <li><strong>Automatic Oxygen Enrichment:</strong> If tank DO drops below 85% saturation, the PLC opens high-pressure pure oxygen proportional solenoid valves to inject micro-bubbles into tank infalls.</li>\n        <li><strong>Auxiliary Aerator Staging:</strong> Redundant blowers and booster pumps automatically engage if primary flow switches drop out.</li>\n        <li><strong>Multi-Channel Alarms:</strong> Critical high/low thresholds trigger loud visual sirens on site while instantly broadcasting automated SMS alerts, voice calls, and SCADA push notifications to on-duty farm managers and technicians 24/7.</li>\n      </ul>\n    ",
+            "takeaways": [
+                  "High stocking densities can exhaust available dissolved oxygen within 20 to 40 minutes during power or blower outages.",
+                  "Optical luminescence sensors eliminate electrolyte depletion and membrane fouling, delivering drift-free continuous DO telemetry.",
+                  "The toxicity of total ammonia nitrogen is heavily dictated by pH; continuous pH monitoring prevents toxic NH₃ spikes.",
+                  "Automated PLC telemetry panels immediately actuate backup oxygen solenoids and secondary pumps upon threshold breaches.",
+                  "Comprehensive data logging ensures 100% trace compliance for GlobalG.A.P., ASC, and international export health certifications."
+            ]
       },
-      1: {
-        title: "Why Water Quality Monitoring Matters in Aquaculture",
-        category: "Water Monitoring",
-        date: "08 Sep 2026",
-        readTime: "5 min read",
-        img: "assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.jpg",
-        content: `
-          <p>Reliable water management starts with reliable information. In high-density aquaculture, hatcheries, and live seafood holding systems, minutes make the difference between biological safety and catastrophic stock loss.</p>
-          <h3>The Critical Role of Dissolved Oxygen (DO)</h3>
-          <p>Fish and shellfish consume oxygen continuously while excreting carbon dioxide and ammonia. A power outage, aerator trip, or rapid temperature rise can deplete tank oxygen reserves within 20 to 45 minutes under heavy stocking loads. Continuous optical DO probes provide instant detection of downward trends long before animals show visible signs of asphyxiation.</p>
-          <h3>Optical vs Galvanic Sensors</h3>
-          <p>Deep Blue Aqua deploys advanced optical luminescence DO sensors from international partners including OxyGuard and Campbell Scientific. Unlike older galvanic membranes that consume electrolyte and foul rapidly in biological bio-films, optical sensors require zero membrane replacements and maintain stable calibration over months.</p>
-          <h3>Automated Telemetry & Fail-Safe Controls</h3>
-          <p>When dissolved oxygen drops below pre-set thresholds, our automated PLC control systems instantly trigger emergency backup oxygen solenoids, switch on auxiliary blowers, and dispatch audible alarms and SMS alerts directly to facility managers.</p>
-        `,
-        takeaways: [
-          "Continuous optical DO monitoring provides real-time warnings before biological stress impacts stock.",
-          "Integrated PLC switchgear enables automated fail-safe actuation of emergency pure oxygen injection.",
-          "Permanent multi-parameter logging provides verified water-quality compliance records for HACCP and export audits."
-        ]
+      "2": {
+            "id": "2",
+            "title": "How to Reduce Risk in Live Lobster and Abalone Holding: Scientific Protocols & Life-Support Systems",
+            "category": "holding",
+            "categoryName": "Live Holding Systems",
+            "date": "01 Sep 2026",
+            "readTime": "8 min read",
+            "img": "assets/services/02_Live_Holding/0005_West-Coast-rock-lobster.webp",
+            "content": "\n      <p>Live seafood export is among the most lucrative yet operationally perilous sectors in global commercial fisheries. High-value species including West Coast rock lobster (<em>Jasus lalandii</em>) and South African abalone (<em>Haliotis midae</em>) fetch premium pricing in key East Asian and European markets—provided they arrive active, robust, and in prime physiological condition. Mortalities during holding or international air freight can instantly erase commercial profit margins on entire consignments.</p>\n\n      <h2>The Physiological Impact of Capture & Confinement Stress</h2>\n      <p>Wild crustaceans and marine gastropods experience severe physiological trauma during commercial harvesting, boat handling, sorting, and land transfer. Physical exertion causes anaerobic muscular glycolysis, resulting in acute lactic acid accumulation in the hemolymph (blood) and severe metabolic acidosis. If held in sub-standard water conditions, animals suffer from compromised oxygen transport, excessive nitrogenous excretion, and secondary bacteremia.</p>\n\n      <h2>Thermal Chilling: Suppressing Metabolic Rates</h2>\n      <p>Temperature control is the primary operational lever in live holding facility design. By lowering water temperature from ambient ocean levels (15°C–18°C) down to physiological holding temperatures of 10°C to 12°C for cold-water lobster and abalone, operators induce controlled metabolic suppression:</p>\n      <ul>\n        <li><strong>Halved Oxygen Consumption:</strong> Oxygen consumption rates decline by more than 50%, reducing biological demand on emergency systems.</li>\n        <li><strong>Reduced Ammonia Excretion:</strong> Metabolic breakdown of proteins slows down, dramatically curtailing toxic unionized ammonia output into the recirculating water.</li>\n        <li><strong>Reduced Aggression:</strong> Subdued animals are far less prone to territorial fighting, limb autotomy, and puncture wounds during dense holding.</li>\n      </ul>\n      <p>Deep Blue Aqua designs titanium plate heat exchangers and marine titanium chillers that resist high-salinity seawater pitting corrosion, providing accurate temperature regulation within ±0.2°C.</p>\n\n      <h2>Continuous Protein Fractionation: Eradicating Mucus & Foam</h2>\n      <p>Stressed lobsters and abalone secrete dense defensive proteinaceous mucus and surface surfactants into the holding water. In conventional filtration loops, this organic surfactant causes uncontrollable, dirty foaming that smothers animal branchial gills, strips dissolved oxygen, and coats tank walls with decaying organic film.</p>\n\n      <p>Deep Blue Aqua equips live holding facilities with heavy-duty commercial foam fractionators (protein skimmers). High-capacity Venturi air injectors introduce millions of micro-bubbles into the contact column. Surface-active mucus and protein molecules adsorb onto the bubble skins and rise into the upper waste collection chamber, purging organics before they decompose into dissolved ammonia.</p>\n\n      <h2>Purging Protocols Before International Air Shipment</h2>\n      <p>Successful international live export requires a structured pre-transport conditioning protocol:</p>\n      <ul>\n        <li><strong>48–72 Hour Feed Deprivation:</strong> Eliminates gut contents, preventing excretion of feces and ammonia inside sealed transport cartons.</li>\n        <li><strong>Osmotic & Salinity Stabilization:</strong> Maintaining stable salinity (34 to 35 PSU) prevents osmotic stress and hemolymph swelling.</li>\n        <li><strong>Gradual Thermal Conditioning:</strong> Chilling water down gradually (no faster than 1°C per 2 hours) avoids thermal shock before packing in insulated polystyrene cartons with chilled gel packs and moist wood wool.</li>\n      </ul>\n\n      <h2>Modular Biosecure Holding Infrastructure</h2>\n      <p>To prevent disease cross-contamination between different wild catch batches, Deep Blue Aqua builds modular, hydraulically isolated holding raceways. Utilizing food-grade fiberglass (GRP) and virgin high-density polyethylene (HDPE), each tank bank features dedicated filtration, independent UV sterilization, and automated DO monitoring—ensuring maximum biosecurity and 100% operational uptime.</p>\n    ",
+            "takeaways": [
+                  "Controlled thermal chilling (10°C–12°C) reduces animal respiration and ammonia excretion by over 50%.",
+                  "Industrial foam fractionators strip defensive mucus and proteins before foaming smothers delicate animal gills.",
+                  "Structured 48–72 hour purging cycles eliminate gut contents, drastically cutting transit mortality during air freight.",
+                  "Marine titanium heat exchangers provide reliable, corrosion-proof chilling in high-salinity seawater circuits.",
+                  "Hydraulically isolated modular tanks prevent cross-contamination between newly landed wild seafood batches."
+            ]
       },
-      2: {
-        title: "How to Reduce Risk in Live Lobster and Abalone Holding",
-        category: "Live Holding",
-        date: "01 Sep 2026",
-        readTime: "6 min read",
-        img: "assets/services/02_Live_Holding/0005_West-Coast-rock-lobster.jpg",
-        content: `
-          <p>Live seafood export is a high-value, high-risk sector. Between ocean capture, landing, packing, and international airfreight, valuable species such as West Coast rock lobster (Jasus lalandii) and South African abalone (Haliotis midae) must be kept in prime physiological condition.</p>
-          <h3>Thermal Chilling & Metabolic Suppression</h3>
-          <p>Cold-water species produce excessive ammonia and nitrogenous waste when subjected to ambient packing temperatures. Deep Blue Aqua live-holding systems incorporate high-efficiency titanium heat exchangers that chill holding water to 10°C–12°C. Lowering water temperature suppresses animal metabolic rates, reducing oxygen demand and waste excretion by more than 50%.</p>
-          <h3>Protein Fractionation for Mucus and Foam Removal</h3>
-          <p>Stressed lobsters and abalone produce thick defensive mucus and proteinaceous foam. In closed holding tanks, this foam rapidly smothers animal gills and coats surfaces. Industrial-scale foam fractionators (protein skimmers) continuously strip these organic molecules, keeping the water crystal clear and free of surface scum.</p>
-          <h3>Purging Cycles Before International Air Transport</h3>
-          <p>Holding animals in clean, recirculated, chilled water for 48 to 72 hours purges their digestive tracts and hardens their shells, drastically reducing transport mortality rates and delivering premium prices at overseas seafood markets.</p>
-        `,
-        takeaways: [
-          "Chilling seawater to controlled holding temperatures cuts nitrogenous excretion and oxygen consumption in half.",
-          "High-capacity protein skimmers strip mucus and organics before surfactant foam can foul holding raceways.",
-          "Pre-export purging protocols ensure animals arrive at international destinations alert, vigorous, and marketable."
-        ]
+      "3": {
+            "id": "3",
+            "title": "Red Tide Mitigation & High-Capacity Seawater Filtration (1,200,000 L/h): Coastal Aquaculture Defense",
+            "category": "pools",
+            "categoryName": "Specialist Pools & Filtration",
+            "date": "22 Aug 2026",
+            "readTime": "8 min read",
+            "img": "assets/projects/01_Red_Tide_Mitigation_Filtration_System.webp",
+            "content": "\n      <p>Harmful Algal Blooms (HABs)—colloquially known as red tides—represent one of the most destructive natural perils facing coastal aquaculture, land-based abalone farms, oyster hatcheries, and marine research facilities along the Southern African coastline. Characterized by explosive population surges of marine dinoflagellates and flagellates, severe red tide events can decimate millions of Rands worth of livestock within hours if ocean intake water is not effectively treated.</p>\n\n      <h2>The Dual Threat: Neurotoxicity and Anoxic Collapse</h2>\n      <p>Coastal algal blooms threaten land-based marine systems through two devastating physiological mechanisms:</p>\n\n      <h3>1. Algal Toxins & Branchial Irritation</h3>\n      <p>Species such as <em>Alexandrium catenella</em> produce paralytic shellfish toxins (saxitoxins) that accumulate in bivalves and cause severe neurological failure. Concurrently, other bloom-forming dinoflagellates release chemical ichthyotoxins or possess physical spines that coat and mechanically damage sensitive fish and abalone gill tissues, leading to respiratory failure and acute animal distress.</p>\n\n      <h3>2. Severe Anoxia and Hydrogen Sulfide Toxicity</h3>\n      <p>As the massive algal bloom reaches peak density and collapses, billions of dead cellular organisms sink to the ocean floor. Marine bacteria rapidly consume every microgram of dissolved oxygen in decomposing the organic mass, transforming intake waters into an anoxic, black sludge heavily laden with toxic hydrogen sulfide (H₂S) gas. Drawing this untreated seawater into farm raceways causes instantaneous mass mortality.</p>\n\n      <h2>Engineering the 1.2 Million Litre/Hour Defense Plant</h2>\n      <p>To protect an extensive coastal marine operation on South Africa's Atlantic seaboard, Deep Blue Aqua designed, fabricated, and commissioned a massive 1,200,000 litres per hour (1.2 ML/h) emergency filtration and conditioning plant.</p>\n\n      <p>The facility was engineered around a dual-stage mechanical, physical, and gaseous treatment train capable of treating immense ocean flow rates under continuous full-load demand:</p>\n\n      <h3>Stage 1: Primary Heavy Debris & Sediment Separation</h3>\n      <p>High-volume coastal sea-water intake pumps draw raw ocean water into deep reinforced concrete intake sumps. Dual high-capacity rotary drum screens with reinforced 316L stainless steel mesh intercept kelp ribbons, drift seaweed, macro-algae, and coarse suspended debris, preventing blinding of downstream fine media vessels.</p>\n\n      <h3>Stage 2: Multi-Vessel High-Rate Media Filtration</h3>\n      <p>The screened water is pumped through an array of large-diameter high-rate pressure filter vessels. Utilizing a specialized layered media bed of coarse garnet, quartz sand, and catalytic media, the pressure filters strip cellular dinoflagellates, organic slime, and particulate detritus down to microscopic levels. Automated backwash valve manifolds sequentially clean individual vessels without interrupting downstream production flow.</p>\n\n      <h3>Stage 3: High-Volume Atmospheric Degassing Towers</h3>\n      <p>To eliminate lethal hydrogen sulfide gas and purge dissolved carbon dioxide, filtered seawater is delivered to the top of twin high-capacity vertical degassing towers. Water cascades downward through structured high-surface-area random packing while high-volume industrial blowers force clean atmospheric air counter-currently upward through the water column. This stripping process volatilizes dissolved toxic gases and restores oxygen saturation to near 100%.</p>\n\n      <h2>Operational Impact & Capital Asset Protection</h2>\n      <p>During subsequent severe West Coast bloom events, where adjacent open flow-through facilities suffered catastrophic losses, the 1.2 ML/h filtration plant operated continuously. The facility maintained pristine water clarity, non-detectable hydrogen sulfide levels, and optimal dissolved oxygen across all culture tanks—safeguarding high-value breeding abalone stocks and validating the immense return on engineering investment.</p>\n    ",
+            "takeaways": [
+                  "Harmful algal blooms (HABs) kill commercial stock through toxic dynamic effects and total oxygen depletion (anoxia).",
+                  "Dual-stage drum and high-rate pressure media filtration extracts microscopic dinoflagellate cells from seawater intakes.",
+                  "Processing 1,200,000 litres per hour delivers uninterrupted production water for large commercial coastal facilities.",
+                  "Counter-current degassing towers strip dissolved toxic hydrogen sulfide (H₂S) and restore dissolved oxygen saturation.",
+                  "Engineered intake filtration shields land-based aquaculture investments from unpredictable ocean bloom hazards."
+            ]
       },
-      3: {
-        title: "Red Tide Mitigation & High-Capacity Water Filtration (1,200,000 L/h)",
-        category: "Specialist Pools",
-        date: "22 Aug 2026",
-        readTime: "5 min read",
-        img: "assets/projects/01_Red_Tide_Mitigation_Filtration_System.png",
-        content: `
-          <p>Harmful algal blooms (HABs), commonly known as red tides, present a severe hazard along the Southern African coastline. When massive blooms of dinoflagellates collapse, bacterial decomposition strips seawater of all dissolved oxygen, while toxic species release potent neurotoxins that cause mass mortalities in coastal abalone farms, oyster hatcheries, and live holding facilities.</p>
-          <h3>Engineering a 1,200,000 Litre/Hour Defense Infrastructure</h3>
-          <p>To protect a premier coastal aquaculture facility from catastrophic red tide exposure, Deep Blue Aqua designed, fabricated, and commissioned a massive 1,200,000 litres per hour (1.2M L/h) emergency filtration plant.</p>
-          <h3>Dual-Stage Mechanical & Depth Treatment</h3>
-          <p>The system pairs high-volume intake pumping with high-capacity micro-screen drum filters and specialized pressure media vessels. During bloom events, raw ocean water is filtered to strip cellular dinoflagellates and organic slime, preventing toxic biomass from penetrating shore-based holding raceways.</p>
-          <h3>Continuous Operational Resilience</h3>
-          <p>The 1.2M L/h installation proved capable of maintaining pristine water exchange and high dissolved oxygen levels during severe ocean bloom events, saving millions of Rands in vulnerable aquaculture livestock.</p>
-        `,
-        takeaways: [
-          "High-capacity mechanical and depth filtration removes dense algal cells before toxic decay occurs.",
-          "Processing 1,200,000 litres per hour ensures uninterrupted production water supply for large commercial facilities.",
-          "Rapid-deployment emergency filtration shields land-based aquaculture investments from unpredictable oceanic red tides."
-        ]
+      "4": {
+            "id": "4",
+            "title": "How Natural Swimming Pool Filtration Works: Chemical-Free Eco-Pool Engineering",
+            "category": "pools",
+            "categoryName": "Specialist Pools",
+            "date": "15 Aug 2026",
+            "readTime": "7 min read",
+            "img": "assets/projects/02_Natural_Pool_01.webp",
+            "content": "\n      <p>Natural swimming pools and ecological swimming ponds represent a major paradigm shift in architectural aquatic design. By replacing harsh synthetic chemicals with natural biological purification principles, natural pools deliver crystal-clear, living water that feels soft on the skin, is completely free of chemical odours, and produces zero toxic chlorinated byproducts.</p>\n\n      <h2>Why Chlorinated Pools Cause Skin & Environmental Issues</h2>\n      <p>Traditional swimming pools rely on massive doses of chlorine or salt-chlorine generators (which simply produce sodium hypochlorite). When chlorine interacts with swimmer sweat, urea, and organic debris, it forms hazardous chemical compounds called chloramines (trichloramine and monochloramine). Chloramines are responsible for the pungent 'chlorine smell', red stinging eyes, skin eczema, hair bleaching, and respiratory irritation in indoor pool environments. Furthermore, backwashing chlorinated water into gardens poisons soil microbiology and groundwater tables.</p>\n\n      <h2>The Biological Two-Zone System</h2>\n      <p>An engineered natural swimming pool replicates the self-purifying mechanisms found in pristine alpine streams and oligotrophic freshwater lakes. The pool is divided into two hydraulically balanced yet physically distinct zones:</p>\n\n      <h3>1. The Clear Swimming Zone</h3>\n      <p>This area is dedicated exclusively to recreation, diving, and exercise. It features smooth architectural walls, swimming lanes, and crystalline water. Surface skimmers continuously pull floating leaves, pollen, and airborne dust off the water surface before they can sink to the bottom and decompose.</p>\n\n      <h3>2. The Biological Regeneration Zone (Wetland Filter)</h3>\n      <p>The regeneration zone functions as a biological wetland biofilter. Layered with graded volcanic zeolite, limestone gravel, and expanded clay aggregates, this bed is colonized by carefully selected indigenous aquatic macrophytes (such as reeds, sedges, water lilies, and marginal plants). Water is gently drawn downward through this mineral substrate by low-wattage circulation pumps.</p>\n\n      <h2>The Science of Nutrient Starvation: How to Prevent Algae</h2>\n      <p>Single-cell green algae and filamentous string algae require two primary chemical nutrients to bloom: nitrogen (nitrate) and dissolved phosphorus (orthophosphate). If these nutrients are present in water exposed to sunlight, algae blooms are inevitable.</p>\n\n      <p>Natural pool engineering prevents algae through intentional nutrient starvation rather than chemical poisoning:</p>\n      <ul>\n        <li><strong>Aerobic Bio-Mineralization:</strong> Beneficial aerobic bacteria colonizing the porous volcanic substrate break down organic matter, converting ammonia into nitrate.</li>\n        <li><strong>Macrophyte Nutrient Uptake:</strong> Fast-growing aquatic wetland plants absorb dissolved nitrates and phosphates directly through their extensive root systems, locking nutrients into plant tissue.</li>\n        <li><strong>Phosphorus Binding Media:</strong> Specialized catalytic media incorporated into the filter bed chemically adsorbs orthophosphate, dropping free water phosphate concentrations below 0.010 mg/L—the critical threshold below which algae cannot metabolize.</li>\n      </ul>\n\n      <h2>Mechanical Pre-Filtration & Low-Energy Circulation</h2>\n      <p>To prevent leaves and physical silt from clogging the regeneration gravel bed, water passes through fine mechanical screen filters (such as curved-sieve skimmers or drum units) prior to biological filtration. High-efficiency, variable-speed DC pumps circulate the entire pool volume through the regeneration bed 2 to 3 times per day, consuming up to 70% less electricity than conventional high-head swimming pool pumps.</p>\n\n      <p>With optional low-dose germicidal UVC clarification units integrated inline, natural swimming pools throughout the Western Cape and South Africa remain sparkling clean, biologically pure, and perfectly in tune with nature throughout all four seasons.</p>\n    ",
+            "takeaways": [
+                  "Natural pools eliminate 100% of chlorine, salt-chlorinators, algaecides, and synthetic chemical biocides.",
+                  "Separating the swimming area from the planted regeneration zone maintains aesthetic clarity and recreational space.",
+                  "Phosphorus limitation (below 0.010 mg/L) starves algae naturally, preventing blooms without chemicals.",
+                  "Volcanic zeolite and biological root zones cultivate billions of beneficial nitrifying microorganisms.",
+                  "Variable-speed eco pumps reduce monthly circulation electricity consumption by up to 70% compared to legacy pool pumps."
+            ]
       },
-      4: {
-        title: "How Natural Swimming Pool Filtration Works",
-        category: "Specialist Pools",
-        date: "15 Aug 2026",
-        readTime: "4 min read",
-        img: "assets/projects/02_Natural_Pool_01.png",
-        content: `
-          <p>Natural swimming pools and eco-pools offer the ultimate luxury: crystal-clear swimming water that feels soft on the skin and contains zero chlorine, salt-cell generators, or toxic chemical biocides.</p>
-          <h3>The Living Ecosystem Approach</h3>
-          <p>Rather than sterilizing water with aggressive chemicals, natural pools replicate the biological purification processes found in mountain streams and oligotrophic freshwater lakes. A natural pool is divided into two distinct zones: a swimming zone and a biological regeneration zone.</p>
-          <h3>The Regeneration Biofilter Bed</h3>
-          <p>Water from the swimming area flows through specialized skimmers into a biological wetland bed layered with graded volcanic aggregates and nutrient-absorbing aquatic plants. Beneficial aerobic microorganisms colonize the gravel bed, breaking down organic contaminants, binding phosphates, and converting nutrients into harmless biomass before algae can exploit them.</p>
-          <h3>Gentle Circulation & Living Clarity</h3>
-          <p>Low-voltage, energy-efficient pumps circulate water continuously through the regeneration zone. Combined with fine mechanical pre-filtration and optional low-dose UVC sterilizers, natural pools in the Helderberg and Western Cape regions provide year-round swimming comfort with minimal operating costs.</p>
-        `,
-        takeaways: [
-          "Biological nutrient deprivation prevents algae blooms without requiring chlorine or synthetic biocides.",
-          "Regeneration wetlands provide natural biofiltration while seamlessly blending into garden architecture.",
-          "Energy-efficient circulation and zero chemical expenditure drastically lower ongoing maintenance costs."
-        ]
+      "5": {
+            "id": "5",
+            "title": "CAPEX and OPEX Considerations When Planning an Aquaculture Facility: Financial Engineering & Risk Mitigation",
+            "category": "design",
+            "categoryName": "System Design & Consulting",
+            "date": "05 Aug 2026",
+            "readTime": "9 min read",
+            "img": "assets/services/01_Aquaculture/0012_Abalone-farm.webp",
+            "content": "\n      <p>Venturing into commercial aquaculture, high-density fish farming, or live seafood holding requires rigorous techno-economic planning. All too often, aquaculture projects fail not because of biological or disease factors, but because flawed hydraulic and equipment engineering saddled the enterprise with unsustainable capital expenditures (CAPEX) or crippling monthly operating expenses (OPEX). Achieving commercial profitability requires striking the optimal balance between initial build cost and lifetime operating efficiency.</p>\n\n      <h2>The True Breakdown of Aquaculture Capital Expenditure (CAPEX)</h2>\n      <p>Prospective aquaculture operators often fixate on the cost of rearing tanks while underestimating the critical supporting life-support infrastructure. A realistic commercial CAPEX budget typically breaks down as follows:</p>\n      <ul>\n        <li><strong>Civil & Structural Infrastructure (25–35%):</strong> Earthworks, concrete floor slabs with integrated drainage sumps, biosecure insulated building envelopes, and biosecurity disinfection stations.</li>\n        <li><strong>Tanks & Culture Vessels (15–20%):</strong> Food-grade fiberglass (GRP) or welded high-density polyethylene (HDPE) raceways with self-cleaning dual-drain Cornell-type bottom hydrodynamics.</li>\n        <li><strong>Water Treatment Train (25–35%):</strong> Micro-screen drum filters, MBBR biofilter chambers with virgin media, foam fractionators, degassing columns, and pure oxygen injection cones.</li>\n        <li><strong>Electrical Switchgear, PLC Telemetry & Backup Power (10–15%):</strong> Automated generator changeover switches, variable-speed pump drives (VFDs), optical oxygen sensors, and digital alarming.</li>\n        <li><strong>Engineering Design, Permitting & Project Management (8–12%):</strong> Environmental Impact Assessments (EIA), hydraulic CAD modeling, and factory acceptance testing.</li>\n      </ul>\n\n      <h2>Hydraulic Head Loss: The Hidden OPEX Killer</h2>\n      <p>In aquaculture, water circulation pumps operate 24 hours a day, 365 days a year—totaling 8,760 hours of annual continuous runtime. Every additional meter of dynamic hydraulic head loss caused by undersized pipe diameters, sharp 90° elbows, restrictive valves, or high-pressure sand filters directly inflates kilowatt-hour consumption.</p>\n\n      <p>Consider a 500 m³/h circulation flow rate: pumping against 12 meters of head requires approximately 22 kW of continuous power; pumping that same volume through a gravity-balanced, low-head system at 3.5 meters of head requires just 7.5 kW. In South Africa, where industrial electricity tariffs exceed R2.50 to R3.50 per kWh, this hydraulic optimization translates to over <strong>R350,000 in direct annual electricity savings</strong>.</p>\n\n      <h2>Oxygenation Strategy: LOX vs. PSA Generators</h2>\n      <p>Dissolved oxygen is a primary recurring operating expense in super-intensive systems. Facility planners face a critical capital trade-off:</p>\n      <ul>\n        <li><strong>Bulk Liquid Oxygen (LOX):</strong> Low initial CAPEX (rental vacuum-insulated storage vessel and ambient vaporizers). However, monthly recurring OPEX is subject to supplier delivery fees, road haulage costs, and vaporization losses, presenting supply chain risks in remote agricultural areas.</li>\n        <li><strong>On-Site Pressure Swing Adsorption (PSA) Generators:</strong> Higher upfront CAPEX for heavy-duty rotary screw air compressors, refrigerant dryers, and PSA molecular sieve separation units. However, production cost per kilogram of pure oxygen is drastically lower (costing only electrical power), yielding payback periods typically under 18 to 24 months.</li>\n      </ul>\n\n      <h2>The Phased Modular Expansion Strategy</h2>\n      <p>One of the most dangerous commercial mistakes is constructing a massive 1,000-ton facility on Day One before validating biological production models, staff competency, and market sales absorption. Deep Blue Aqua advocates a phased modular architecture:</p>\n      <p>By engineering standardized 50-ton or 100-ton autonomous production modules, operators can commission Module 1, generate commercial cash flow, train operational technicians, and establish buyer relationships before committing capital outlays to subsequent phases. This modularity also delivers superior biosecurity—isolating potential disease events to a single module without compromising the entire farm's stock.</p>\n    ",
+            "takeaways": [
+                  "Continuous 24/7 pump power is often the largest operational cost line; minimizing hydraulic head loss yields immense lifetime savings.",
+                  "Tanks represent less than 20% of CAPEX; life-support filtration, oxygenation, and PLC telemetry dictate long-term project survival.",
+                  "On-site PSA oxygen generation requires higher upfront CAPEX but drastically cuts monthly LOX freight operating expenses.",
+                  "Self-cleaning dual-drain tank hydrodynamics extract 90% of settleable solids through the bottom drain, reducing drum filter work.",
+                  "A phased modular expansion strategy minimizes financial risk, validates production economics, and safeguards cash reserves."
+            ]
       },
-      5: {
-        title: "CAPEX and OPEX Considerations When Planning an Aquaculture Facility",
-        category: "System Design",
-        date: "05 Aug 2026",
-        readTime: "6 min read",
-        img: "assets/services/01_Aquaculture/0012_Abalone-farm.jpg",
-        content: `
-          <p>Establishing a commercial aquaculture venture in Africa requires balancing upfront capital expenditure (CAPEX) with long-term operating costs (OPEX). Many facilities struggle not from biological failure, but because poorly engineered hydraulics impose crippling monthly electricity and liquid oxygen expenses.</p>
-          <h3>Hydraulic Head Loss & Lifetime Pump Energy</h3>
-          <p>Pumps operate 24 hours a day, 365 days a year. Every additional metre of hydraulic head loss caused by undersized piping, excessive 90-degree elbows, or high-friction filters adds thousands of kilowatt-hours to the monthly power bill. Deep Blue Aqua designs gravity-balanced systems with low-head, high-efficiency propeller and axial-flow pumps to minimize energy draw.</p>
-          <h3>Right-Sizing Oxygenation Systems</h3>
-          <p>Liquid oxygen (LOX) or pressure-swing adsorption (PSA) oxygen generators represent major ongoing OPEX lines. Utilizing high-efficiency oxygen cones and counter-current dissolution columns achieves greater than 90% gas absorption efficiency, cutting oxygen waste and operating expenses significantly.</p>
-          <h3>Modular Phased Expansion</h3>
-          <p>Starting with modular tanks and skid-mounted filtration allows operators to validate production models and build cash flow before scaling up capital infrastructure. Pre-fabricated fibreglass (GRP) and high-density polyethylene (HDPE) components provide flexible, cost-effective expansion paths.</p>
-        `,
-        takeaways: [
-          "Optimizing hydraulic head loss is the single most effective way to lower 24/7 pumping power costs.",
-          "High-efficiency oxygen cones achieve >90% transfer efficiency, significantly lowering oxygen generation OPEX.",
-          "Phased modular construction mitigates initial financial risk and aligns capital outlays with harvest revenue."
-        ]
+      "6": {
+            "id": "6",
+            "title": "Borehole & Dam Water Treatment: Managing Iron, Turbidity and Biofilm on Farms & Agricultural Irrigation",
+            "category": "agriculture",
+            "categoryName": "Agricultural Water",
+            "date": "25 Sep 2026",
+            "readTime": "9 min read",
+            "img": "assets/ruben/IMG_8463.webp",
+            "content": "\n      <p>Agricultural enterprises across the Western Cape, Karoo, and Southern Africa rely heavily on private farm water resources, including agricultural boreholes, storage dams, and mountain river catchments. However, raw ground and surface water supplies frequently carry severe chemical, physical, and biological contamination: elevated dissolved iron and manganese, colloidal clay turbidity, heavy organic silt, and virulent bacterial biofilms that choke irrigation infrastructure and compromise livestock health.</p>\n\n      <h2>The Mechanics of Iron & Manganese Fouling in Irrigation</h2>\n      <p>Deep sub-surface borehole water exists in an anaerobic (oxygen-depleted), reducing geochemical state. Under these conditions, iron and manganese remain completely dissolved in their soluble, clear chemical states as ferrous iron (Fe²⁺) and manganous manganese (Mn²⁺). When drawn from the ground and exposed to air:</p>\n      <ul>\n        <li><strong>Atmospheric Oxidation:</strong> Soluble Fe²⁺ reacts rapidly with atmospheric oxygen, converting into insoluble ferric hydroxide precipitate: <em>4Fe²⁺ + O₂ + 10H₂O &rarr; 4Fe(OH)₃ &darr; + 8H⁺</em>.</li>\n        <li><strong>Reddish-Brown Sludge Deposition:</strong> The resulting insoluble ferric precipitate forms a dense, gelatinous ochre sludge that coats internal pipe walls, fouls pressure regulators, and blinds drip emitters and micro-sprayers within weeks.</li>\n        <li><strong>Iron-Oxidizing Bacteria (<em>Gallionella</em> & <em>Leptothrix</em>):</strong> These specialized microorganisms thrive in iron-rich waters, creating thick, slimy biological biofilms that bind with mineral precipitates, creating virtually impenetrable pipe blockages that resist standard acid line flushes.</li>\n      </ul>\n\n      <h2>Multi-Stage Catalytic Media & Aeration Treatment</h2>\n      <p>Deep Blue Aqua designs and fabricates skid-mounted catalytic filtration plants that eliminate iron and manganese without relying on ongoing toxic chemical dosing:</p>\n      <ul>\n        <li><strong>Proactive Aeration & Dissolved Oxygen Enrichment:</strong> Water passes through high-efficiency Venturi injectors or atmospheric aeration trays into an aeration buffer vessel, supercharging dissolved oxygen levels to force rapid chemical precipitation.</li>\n        <li><strong>Catalytic Filter Media (DMI-65 & Manganese Greensand):</strong> The aerated water is pumped through pressure filtration vessels loaded with catalytic media. The media surface acts as an active electron catalyst, instantly oxidizing residual dissolved minerals and filtering out precipitated floc down to 5 microns.</li>\n        <li><strong>Automated Differential Backwashing:</strong> Intelligent multi-port PLC valves initiate high-rate backwashes when pressure differential reaches 0.5 bar, scrubbing media beds clean and discharging concentrated mineral sludge to evaporation channels.</li>\n      </ul>\n\n      <h2>Suspended Solid & Organic Waste Removal from Farm Dams</h2>\n      <p>Open farm dams are subject to solar heating, agricultural fertilizer runoff, and seasonal windstorms, generating heavy loads of floating debris, colloidal clay silt, and filamentous algae. Pumping raw dam water into precision drip irrigation manifolds causes rapid nozzle clogging and uneven orchard water distribution.</p>\n\n      <p>Deep Blue Aqua deploys specialized mechanical separation systems that extract suspended solids and particulate organic waste before water enters secondary irrigation booster stations. Intercepting particulate organics eliminates decaying biomass inside pipelines, prevents anaerobic biofouling, and preserves uniform emission rates across high-value citrus, deciduous fruit, and vineyard blocks.</p>\n\n      <h2>Water Sterilization with Ozone and Ultraviolet (UV) Systems</h2>\n      <p>Agricultural runoff and dam waters frequently harbor pathogenic coliform bacteria (such as <em>Escherichia coli</em>, <em>Salmonella</em>, and <em>Phytophthora</em>). For export fruit, commercial vegetables, and intensive livestock drinking lines, pathogen-laden water creates catastrophic compliance failures during GlobalG.A.P. and export audits.</p>\n\n      <p>Deep Blue Aqua engineers inline disinfection skids combining high-output ultraviolet (UV-C at 254 nm) and corona-discharge ozone generators. Ozone rapidly destroys bacterial cell walls and oxidizes stubborn biofilms inside mainline piping. Unlike chlorine or hypochlorite, ozone breaks down into pure dissolved oxygen within minutes, leaving zero harmful chlorination byproducts, toxic halogenated compounds, or soil salinity increases.</p>\n\n      <h2>Solar-Powered Off-Grid Pumping & Water Management</h2>\n      <p>Many prime agricultural boreholes and mountain catchment dams are situated kilometers away from municipal electrical power grids. Deep Blue Aqua designs turnkey solar-powered water treatment and telemetry skids. High-efficiency DC variable-speed pumps powered directly by solar photovoltaic arrays draw water through filtration trains into elevated reservoirs, providing consistent, clean water delivery across remote farm blocks with zero diesel generator fuel costs.</p>\n    ",
+            "takeaways": [
+                  "Soluble ferrous iron (Fe²⁺) oxidizes upon air contact into insoluble ferric sludge, rapidly blocking drip emitters and micro-sprayers.",
+                  "Catalytic media filtration (DMI-65 / Greensand) coupled with atmospheric aeration removes iron and manganese without chemical dosing.",
+                  "Mechanical solids and organic waste removal prevents algae and silt from decaying inside agricultural irrigation manifolds.",
+                  "Ozone and UV disinfection eradicate pathogenic E. coli and Phytophthora, leaving zero toxic chemical residues on export crops.",
+                  "Solar-powered off-grid skids deliver reliable water filtration and delivery across remote mountain farm catchments."
+            ]
+      },
+      "featured": {
+            "id": "featured",
+            "title": "What Is a Recirculating Aquaculture System (RAS)? Complete Engineering & Biological Design Guide",
+            "category": "ras",
+            "categoryName": "Aquaculture & RAS",
+            "date": "18 Sep 2026",
+            "readTime": "9 min read",
+            "img": "assets/projects/06_Trout_Hatchery_RAS.webp",
+            "content": "\n      <p><strong>Recirculating Aquaculture Systems (RAS)</strong> represent the definitive technological frontier in modern intensive land-based aquaculture. Conventional flow-through systems require millions of litres of pristine river or coastal seawater daily, continuously exposing sensitive stocks to wild temperature spikes, agricultural pesticides, pathogens, and harmful algal blooms. In stark contrast, an engineered RAS continuously purifies, conditions, and recycles 90% to 99% of total system water volume through a closed or semi-closed hydrodynamic circuit.</p>\n\n      <h2>The Engineering Fundamentals: Why Water Recirculation Works</h2>\n      <p>At high stocking densities (ranging from 30 kg/m³ to upwards of 100 kg/m³ depending on species), cultured fish and crustaceans excrete substantial biological wastes: solid feces, dissolved total ammonia nitrogen (TAN), carbon dioxide (CO₂), and microscopic organic colloids. Without continuous multi-barrier extraction, these metabolic byproducts rapidly poison the aquatic environment, strip dissolved oxygen, and cause mass mortality within hours.</p>\n      \n      <p>A high-performance RAS functions as an artificial ecosystem. By integrating precision mechanical separation, autotrophic bacterial nitrification, gas stripping, ultra-pure oxygen enrichment, and biological disinfection, operators gain total sovereign control over culture water chemistry regardless of outside environmental turbulence.</p>\n\n      <h2>The Multi-Barrier RAS Water Treatment Loop</h2>\n      <p>Deep Blue Aqua designs and fabricates turnkey RAS treatment loops tailored specifically to Southern African conditions, where water scarcity, biosecurity, and power reliability are top priorities. Every facility incorporates a synchronized succession of primary, secondary, and tertiary unit operations:</p>\n\n      <h3>1. Primary Mechanical Separation (Rotary Drum Filters)</h3>\n      <p>Solid removal is the single most critical step in RAS management. Solid feces and uneaten pelleted feed must be physically extracted from the water column within minutes before hydraulic turbulence and biological decay dissolve them into colloidal particles and toxic ammonia. Stainless steel (316L) micro-screen drum filters with mesh apertures between 40 µm and 60 µm filter the entire tank volume once every 30 to 45 minutes, reducing biological oxygen demand (BOD) loads on the downstream biofilter by up to 50%.</p>\n\n      <h3>2. Biological Nitrification (Moving Bed Biofilm Reactors - MBBR)</h3>\n      <p>Dissolved unionized ammonia (NH₃) is intensely toxic to aquatic organisms even at concentrations as low as 0.05 mg/L. In the MBBR, billions of aerobic nitrifying bacteria colonize specialized high-surface-area virgin polypropylene carrier media (providing 650 to 900 m²/m³ of protected surface area). The two-step biological oxidation proceeds under continuous coarse aeration:</p>\n      <ul>\n        <li><strong>Step 1 (Nitrosomonas spp.):</strong> Converts total ammonia nitrogen into toxic nitrite: <em>NH₄⁺ + 1.5 O₂ &rarr; NO₂⁻ + H₂O + 2H⁺</em></li>\n        <li><strong>Step 2 (Nitrobacter / Nitrospira spp.):</strong> Rapidly oxidizes nitrite into relatively harmless nitrate: <em>NO₂⁻ + 0.5 O₂ &rarr; NO₃⁻</em></li>\n      </ul>\n      <p>Because nitrification produces hydrogen ions (H⁺) that consume system alkalinity, automated sodium bicarbonate (NaHCO₃) or calcium carbonate dosing ensures pH remains stable between 7.2 and 7.6, preserving bacterial conversion rates.</p>\n\n      <h3>3. Micro-Colloid & Protein Removal (Foam Fractionation)</h3>\n      <p>Sub-micron particulate matter, fish mucus, surface-active proteins, and organic colour molecules cannot be intercepted by mechanical screens. High-efficiency Venturi-driven protein skimmers generate millions of microscopic bubbles. Surface-active compounds adhere to the rising bubble interfaces, forming a thick, dark biological foam concentrate that discharges out the top waste riser.</p>\n\n      <h3>4. Degassing & Carbon Dioxide Stripping</h3>\n      <p>As fish respire, dissolved carbon dioxide (CO₂) accumulates in the culture water. When dissolved CO₂ exceeds 15–20 mg/L, it induces hypercapnia, acidifies the blood, and impedes oxygen uptake. Counter-current packed-column degassing towers with high-volume low-pressure blowers efficiently strip dissolved CO₂ into the exhaust air before water re-enters the culture tanks.</p>\n\n      <h3>5. Pure Oxygen Dissolution (Pressurized Oxygen Cones)</h3>\n      <p>Atmospheric aeration cannot sustain super-intensive fish biomass. Deep Blue Aqua integrates high-pressure oxygen dissolution cones capable of achieving over 95% gas absorption efficiency. Pure industrial or PSA-generated oxygen gas is dissolved under pressure, delivering return water supersaturated at 120% to 180% DO, ensuring culture tanks never drop below 80% saturation (6.5 to 8.5 mg/L) even during peak post-feeding oxygen consumption surges.</p>\n\n      <h3>6. Pathogen Biosecurity & Sterilization (Ozone & UV)</h3>\n      <p>Closed-loop systems are vulnerable to pathogen proliferation if microbial populations are unmanaged. High-output germicidal ultraviolet (UV-C) reactors operating at 254 nm wavelength deliver minimum doses of 30 to 45 mJ/cm², effectively disrupting the DNA of waterborne bacteria, viruses, and parasites. In marine and shellfish facilities, low-dose micro-ozonation further clarifies water, eliminates lingering organic colour, and destroys free-swimming ciliates without toxic residuals.</p>\n\n      <h2>Key Commercial Advantages of Closed RAS Technology</h2>\n      <p>Why are progressive commercial growers and investors throughout South Africa and internationally choosing RAS over conventional earthen ponds and open flow-through waterways?</p>\n      <ul>\n        <li><strong>Unmatched Water Conservation:</strong> Water usage is reduced by up to 99%, allowing multi-ton production facilities to operate sustainably on low-yielding agricultural boreholes.</li>\n        <li><strong>Guaranteed Biosecurity:</strong> Fully isolated from coastal dinoflagellate blooms (red tides), river agricultural pesticide runoff, and wild parasites.</li>\n        <li><strong>Year-Round Optimal Growth:</strong> Complete water temperature control (using commercial heat pumps) eliminates seasonal growth plateaus, slashing grow-out cycles and optimizing Feed Conversion Ratios (FCR).</li>\n        <li><strong>Geographic Independence:</strong> Facilities can be built directly adjacent to major urban markets, international airports, and logistics hubs, slashing live fish freight costs and eliminating cold-chain transport stress.</li>\n      </ul>\n    ",
+            "takeaways": [
+                  "Recirculating Aquaculture Systems (RAS) recycle up to 99% of total system volume, drastically slashing water consumption.",
+                  "Mechanical solids removal within 15 minutes of excretion reduces biofilter biological load by up to 50%.",
+                  "Moving-bed biofilters (MBBR) deliver complete two-step conversion of toxic ammonia into benign nitrate under steady alkalinity.",
+                  "Pressurized oxygen cones achieve >95% transfer efficiency, maintaining dissolved oxygen above critical stress thresholds at high biomass.",
+                  "Multi-barrier biosecurity (drum filtration, foam fractionation, UV-C, and ozone) completely isolates stock from wild oceanic and river pathogens."
+            ]
       }
-    };
+};
 
     // Full Article Modal Reader Logic
     const dialog = document.querySelector('#articleDialog');
@@ -720,12 +704,6 @@
           <img src="${art.img}" alt="${art.title}" class="article-reader-img" loading="lazy">
           <div class="article-reader-content">
             ${art.content}
-          </div>
-          <div class="article-takeaways">
-            <h4><i class="fa-solid fa-lightbulb" style="color:#00bce9;"></i> Key Engineering Takeaways</h4>
-            <ul>
-              ${art.takeaways.map(t => `<li>${t}</li>`).join('')}
-            </ul>
           </div>
           <div class="article-reader-cta">
             <div>

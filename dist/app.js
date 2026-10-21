@@ -81,9 +81,9 @@ const projects = [
 ];
 
 const articles = [
-  ['18 Sep 2026', 'What Is a Recirculating Aquaculture System (RAS)?', 'assets/projects/06_Trout_Hatchery_RAS.webp', 'Recirculating Aquaculture Systems allow water to be treated and reused rather than continuously discharged, giving complete control over biological parameters.', '5 min read', 'blog-post.html?article=ras-guide'],
-  ['12 Sep 2026', 'How Drum Filters Work in Aquaculture & Agriculture', 'assets/ruben/IMG_4619.webp', 'Mechanical solids removal is the first critical barrier in modern water systems. Explore how automatic self-cleaning drum filters eliminate waste before breakdown.', '4 min read', 'blog-post.html?article=drum-filters'],
-  ['04 Sep 2026', 'Why Water Quality Monitoring Matters', 'assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.webp', 'From continuous optical dissolved oxygen sensing to automated multi-parameter telemetry, reliable data logging and alarms safeguard valuable aquatic life.', '6 min read', 'blog-post.html?article=monitoring-systems']
+  ['18 Sep 2026', 'What Is a Recirculating Aquaculture System (RAS)?', 'assets/projects/06_Trout_Hatchery_RAS.webp', 'Recirculating Aquaculture Systems allow water to be treated and reused rather than continuously discharged, giving complete control over biological parameters.', '5 min read', 'blog-post.html?id=featured'],
+  ['12 Sep 2026', 'How Drum Filters Work in Aquaculture Systems', 'assets/ruben/IMG_4619.webp', 'Mechanical solids removal is the critical first barrier in modern fish systems. Explore how automatic self-cleaning drum filters eliminate waste before breakdown.', '4 min read', 'blog-post.html?id=0'],
+  ['04 Sep 2026', 'Why Water Quality Monitoring Matters', 'assets/services/05_Control_Systems/0002_Monitoring-unit-in-container.webp', 'From continuous optical dissolved oxygen sensing to automated multi-parameter telemetry, reliable data logging and alarms safeguard valuable aquatic life.', '6 min read', 'blog-post.html?id=1']
 ];
 
 const testimonials = [
@@ -106,10 +106,10 @@ const testimonials = [
     quote: 'Operating a high-density marine hatchery requires zero tolerance for water-quality failures. Deep Blue Aqua’s biofiltration and sensor telemetry have delivered flawless reliability.'
   },
   {
-    name: 'Helderberg Aquatic Centre Facilities',
-    role: 'Facilities Management (50m Pool & Eco-Pool)',
+    name: 'Western Cape Aquatic Facilities Management',
+    role: 'Commercial Aquatic Facilities & Natural Pools',
     region: 'Western Cape',
-    quote: 'Managing a high-demand 50m pool and natural eco-pool requires proven hydraulic design. Deep Blue Aqua delivered robust filtration infrastructure that performs day in and day out.'
+    quote: 'Managing high-demand commercial swimming facilities and natural chemical-free eco-pools requires proven hydraulic design. Deep Blue Aqua delivered robust filtration infrastructure that performs day in and day out.'
   }
 ];
 
@@ -190,10 +190,11 @@ document.querySelector('#sections').innerHTML = `
         <div class="agri-band-content">
           <span class="eyebrow" style="color:#059669;"><i class="fa-solid fa-wheat-awn"></i> TURNKEY FARM WATER SYSTEMS</span>
           <h2>Water Solutions for Agriculture &amp; Commercial Farms</h2>
-          <p>From borehole iron and manganese filtration to automatic self-cleaning Faivre drum filters for drip irrigation, mountain solar pump houses, and biosecure livestock water.</p>
+          <p>From borehole iron and manganese filtration to suspended solids and organic waste removal, pH control, ozone sterilization, mountain solar pump houses, and biosecure livestock water.</p>
           <div class="agri-band-tags">
             <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Borehole Iron &amp; Manganese Removal</span>
-            <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Faivre Drum Filtration for Irrigation</span>
+            <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Suspended Solid &amp; Waste Clarification</span>
+            <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> pH Control &amp; Ozone Sterilization</span>
             <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Mountain Solar Pump Stations</span>
             <span class="agri-tag"><i class="fa-solid fa-circle-check"></i> Biosecure Livestock Water Treatment</span>
           </div>
@@ -222,8 +223,8 @@ document.querySelector('#sections').innerHTML = `
         <img src="assets/ruben/IMG_3105.webp" alt="Deep Blue Aquatic Systems technical installation" class="why-choose-img" loading="lazy">
         <div class="why-media-badge">
           <div class="wm-stat">
-            <strong>15+ Yrs</strong>
-            <small>Aquatic Engineering</small>
+            <strong>19 Years</strong>
+            <small>Est. 2008</small>
           </div>
           <div class="wm-divider"></div>
           <div class="wm-stat">
