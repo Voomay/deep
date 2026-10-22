@@ -500,7 +500,7 @@
         state.step = 'ask_contact_fast';
         botReply(`
           <strong>Direct Technical Escalation 📞</strong><br><br>
-          You can reach our Strand office directly at <a href="tel:+27218562031" style="color:#009bd0;font-weight:700;">+27 21 856 2031</a> (Mon – Fri 08:00 – 17:00).<br><br>
+          You can reach our Strand office directly at <a href="tel:+27218562031" style="color:#009bd0;font-weight:700;">+27 21 856 2031</a> (Mon – Fri 07:45 – 16:45).<br><br>
           Or share your contact details below and an engineer will connect with you promptly:
         `, true, 400, () => {
           renderContactForm(true);
@@ -835,7 +835,7 @@
       botReply(`
         <strong>Our Office & Workshop Location 📍</strong><br><br>
         • <strong>Address:</strong> 185 Mills Street, Gants Plaza, Strand 7140, Western Cape, South Africa<br>
-        • <strong>Operating Hours:</strong> Monday – Friday 08:00 – 17:00<br>
+        • <strong>Operating Hours:</strong> Monday – Friday 07:45 – 16:45<br>
         • <strong>Coverage:</strong> Western Cape, South Africa nationwide, and international turnkey projects across Africa.
       `, true, 400, () => {
         renderChips([

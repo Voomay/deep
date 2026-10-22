@@ -7026,3 +7026,77 @@ button, a, input, select, textarea {
 
 
 
+
+
+/* Team cards without photos */
+.team-img-wrap.no-photo {
+  aspect-ratio: auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: linear-gradient(135deg, #021a36 0%, #06335b 60%, #0077a9 100%);
+}
+.team-img-wrap.no-photo .team-badge {
+  position: static;
+}
+
+/* Accreditations */
+.accred-section { padding-top: 20px; }
+.accred-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.accred-card {
+  background: #ffffff;
+  border: 1px solid #dceffa;
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 6px 20px rgba(11, 115, 156, 0.06);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.accred-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(11, 115, 156, 0.14);
+  border-color: #00bce9;
+}
+.accred-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(0, 155, 208, 0.12), rgba(0, 197, 239, 0.18));
+  color: #009bd0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.accred-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #06224c;
+  margin: 0 0 10px;
+}
+.accred-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b6b8b;
+  margin: 0;
+}
+.accred-note {
+  text-align: center;
+  margin: 26px 0 0;
+  font-size: 14px;
+  color: #476582;
+}
+.accred-note a { color: #009bd0; font-weight: 700; }
+@media (max-width: 1024px) {
+  .accred-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .accred-grid { grid-template-columns: 1fr; }
+}

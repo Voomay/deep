@@ -390,7 +390,8 @@ document.querySelector('#sections').innerHTML = `
             South African aquatic engineering and water technology company specialising in the design, manufacture, supply and installation of systems where water quality, reliability and control matter.
           </p>
           <div class="footer-socials">
-            <a href="https://linkedin.com/company/deep-blue-aqua" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/deepblueaqua.net/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/deep-blue-aquatic-systems" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://wa.me/27218562031" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
@@ -452,7 +453,7 @@ document.querySelector('#sections').innerHTML = `
               <span class="fci-icon"><i class="fa-solid fa-clock"></i></span>
               <div class="fci-text">
                 <span class="fci-label">Business Hours</span>
-                <span>Mon – Fri: 08:00 – 17:00</span>
+                <span>Mon – Fri: 07:45 – 16:45</span>
               </div>
             </div>
           </div>
